@@ -12,7 +12,6 @@
   "homepage": "https://github.com/MatejMazur/react-katex",
   "main": "dist/react-katex.js",
   "umd:main": "dist/react-katex.umd.js",
-  "module": "dist/react-katex.mjs",
   "source": "index.js",
   "author": {
     "name": "Matej Mazur",
