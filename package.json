@@ -27,7 +27,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "preinstall": "cd demo && npm install",
     "start": "cd demo && npm start",
     "build": "microbundle --jsx React.createElement",
     "dev": "microbundle watch",
