@@ -44,9 +44,11 @@ const App = () => {
         This is an example of inline math (via <code>props.children</code>
         ): <TeX inline>\int_0^\infty x^2 dx</TeX>.<br />
         <i>
-          (you must use curly braces if you want to use chars like "{'{'}
-          ", "{'}'}
-          ")
+          (you must use curly braces if you want to use chars like &quot;
+          {'{'}
+          &quot;, &quot;
+          {'}'}
+          &quot;)
         </i>
       </p>
       <p>
