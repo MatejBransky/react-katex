@@ -1,0 +1,653 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeX error handling error is caused while parsing math expression 1`] = `
+<div>
+  <div>
+    <span
+      class="katex-error"
+      style="color:#cc0000"
+      title="ParseError: KaTeX parse error: Expected '}', got 'EOF' at end of input: \\\\sum_{"
+    >
+      \\sum_{
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TeX error handling formula with the wrong part highlighted in default color 1`] = `
+<div>
+  <div>
+    <span
+      class="katex-display"
+    >
+      <span
+        class="katex"
+      >
+        <span
+          class="katex-mathml"
+        >
+          <math>
+            <semantics>
+              <mrow>
+                <mstyle
+                  mathcolor="#cc0000"
+                >
+                  <mtext>
+                    \\inta
+                  </mtext>
+                </mstyle>
+              </mrow>
+              <annotation
+                encoding="application/x-tex"
+              >
+                \\inta
+              </annotation>
+            </semantics>
+          </math>
+        </span>
+        <span
+          aria-hidden="true"
+          class="katex-html"
+        >
+          <span
+            class="base"
+          >
+            <span
+              class="strut"
+              style="height:1em;vertical-align:-0.25em;"
+            />
+            <span
+              class="mord text"
+              style="color:#cc0000;"
+            >
+              <span
+                class="mord"
+                style="color:#cc0000;"
+              >
+                \\inta
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TeX error handling props.errorColor 1`] = `
+<div>
+  <div>
+    <span
+      class="katex-display"
+    >
+      <span
+        class="katex"
+      >
+        <span
+          class="katex-mathml"
+        >
+          <math>
+            <semantics>
+              <mrow>
+                <mstyle
+                  mathcolor="#bb0000"
+                >
+                  <mtext>
+                    \\inta
+                  </mtext>
+                </mstyle>
+              </mrow>
+              <annotation
+                encoding="application/x-tex"
+              >
+                \\inta
+              </annotation>
+            </semantics>
+          </math>
+        </span>
+        <span
+          aria-hidden="true"
+          class="katex-html"
+        >
+          <span
+            class="base"
+          >
+            <span
+              class="strut"
+              style="height:1em;vertical-align:-0.25em;"
+            />
+            <span
+              class="mord text"
+              style="color:#bb0000;"
+            >
+              <span
+                class="mord"
+                style="color:#bb0000;"
+              >
+                \\inta
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TeX error handling props.renderError: error is caused while parsing math expression 1`] = `
+<div>
+  <div>
+    Message of error: 
+    KaTeX parse error: Expected '}', got 'EOF' at end of input: \\sum_{
+  </div>
+</div>
+`;
+
+exports[`TeX error handling props.renderError: invalid type of expression in props.math 1`] = `
+<div>
+  <div>
+    Message of error: 
+    KaTeX can only parse string typed expression
+  </div>
+</div>
+`;
+
+exports[`TeX expression via props.children 1`] = `
+<div>
+  <div>
+    <span
+      class="katex-display"
+    >
+      <span
+        class="katex"
+      >
+        <span
+          class="katex-mathml"
+        >
+          <math>
+            <semantics>
+              <mrow>
+                <munderover>
+                  <mo>
+                    ∑
+                  </mo>
+                  <mn>
+                    0
+                  </mn>
+                  <mi
+                    mathvariant="normal"
+                  >
+                    ∞
+                  </mi>
+                </munderover>
+              </mrow>
+              <annotation
+                encoding="application/x-tex"
+              >
+                \\sum_0^\\infty
+              </annotation>
+            </semantics>
+          </math>
+        </span>
+        <span
+          aria-hidden="true"
+          class="katex-html"
+        >
+          <span
+            class="base"
+          >
+            <span
+              class="strut"
+              style="height:2.9185100000000004em;vertical-align:-1.267113em;"
+            />
+            <span
+              class="mop op-limits"
+            >
+              <span
+                class="vlist-t vlist-t2"
+              >
+                <span
+                  class="vlist-r"
+                >
+                  <span
+                    class="vlist"
+                    style="height:1.6513970000000002em;"
+                  >
+                    <span
+                      style="top:-1.882887em;margin-left:0em;"
+                    >
+                      <span
+                        class="pstrut"
+                        style="height:3.05em;"
+                      />
+                      <span
+                        class="sizing reset-size6 size3 mtight"
+                      >
+                        <span
+                          class="mord mtight"
+                        >
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      style="top:-3.050005em;"
+                    >
+                      <span
+                        class="pstrut"
+                        style="height:3.05em;"
+                      />
+                      <span>
+                        <span
+                          class="mop op-symbol large-op"
+                        >
+                          ∑
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      style="top:-4.3000050000000005em;margin-left:0em;"
+                    >
+                      <span
+                        class="pstrut"
+                        style="height:3.05em;"
+                      />
+                      <span
+                        class="sizing reset-size6 size3 mtight"
+                      >
+                        <span
+                          class="mord mtight"
+                        >
+                          ∞
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="vlist-s"
+                  >
+                    ​
+                  </span>
+                </span>
+                <span
+                  class="vlist-r"
+                >
+                  <span
+                    class="vlist"
+                    style="height:1.267113em;"
+                  >
+                    <span />
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TeX expression via props.math 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <span
+          class="katex-display"
+        >
+          <span
+            class="katex"
+          >
+            <span
+              class="katex-mathml"
+            >
+              <math>
+                <semantics>
+                  <mrow>
+                    <munderover>
+                      <mo>
+                        ∑
+                      </mo>
+                      <mn>
+                        0
+                      </mn>
+                      <mi
+                        mathvariant="normal"
+                      >
+                        ∞
+                      </mi>
+                    </munderover>
+                  </mrow>
+                  <annotation
+                    encoding="application/x-tex"
+                  >
+                    \\sum_0^\\infty
+                  </annotation>
+                </semantics>
+              </math>
+            </span>
+            <span
+              aria-hidden="true"
+              class="katex-html"
+            >
+              <span
+                class="base"
+              >
+                <span
+                  class="strut"
+                  style="height:2.9185100000000004em;vertical-align:-1.267113em;"
+                />
+                <span
+                  class="mop op-limits"
+                >
+                  <span
+                    class="vlist-t vlist-t2"
+                  >
+                    <span
+                      class="vlist-r"
+                    >
+                      <span
+                        class="vlist"
+                        style="height:1.6513970000000002em;"
+                      >
+                        <span
+                          style="top:-1.882887em;margin-left:0em;"
+                        >
+                          <span
+                            class="pstrut"
+                            style="height:3.05em;"
+                          />
+                          <span
+                            class="sizing reset-size6 size3 mtight"
+                          >
+                            <span
+                              class="mord mtight"
+                            >
+                              0
+                            </span>
+                          </span>
+                        </span>
+                        <span
+                          style="top:-3.050005em;"
+                        >
+                          <span
+                            class="pstrut"
+                            style="height:3.05em;"
+                          />
+                          <span>
+                            <span
+                              class="mop op-symbol large-op"
+                            >
+                              ∑
+                            </span>
+                          </span>
+                        </span>
+                        <span
+                          style="top:-4.3000050000000005em;margin-left:0em;"
+                        >
+                          <span
+                            class="pstrut"
+                            style="height:3.05em;"
+                          />
+                          <span
+                            class="sizing reset-size6 size3 mtight"
+                          >
+                            <span
+                              class="mord mtight"
+                            >
+                              ∞
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                      <span
+                        class="vlist-s"
+                      >
+                        ​
+                      </span>
+                    </span>
+                    <span
+                      class="vlist-r"
+                    >
+                      <span
+                        class="vlist"
+                        style="height:1.267113em;"
+                      >
+                        <span />
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <span
+        class="katex-display"
+      >
+        <span
+          class="katex"
+        >
+          <span
+            class="katex-mathml"
+          >
+            <math>
+              <semantics>
+                <mrow>
+                  <munderover>
+                    <mo>
+                      ∑
+                    </mo>
+                    <mn>
+                      0
+                    </mn>
+                    <mi
+                      mathvariant="normal"
+                    >
+                      ∞
+                    </mi>
+                  </munderover>
+                </mrow>
+                <annotation
+                  encoding="application/x-tex"
+                >
+                  \\sum_0^\\infty
+                </annotation>
+              </semantics>
+            </math>
+          </span>
+          <span
+            aria-hidden="true"
+            class="katex-html"
+          >
+            <span
+              class="base"
+            >
+              <span
+                class="strut"
+                style="height:2.9185100000000004em;vertical-align:-1.267113em;"
+              />
+              <span
+                class="mop op-limits"
+              >
+                <span
+                  class="vlist-t vlist-t2"
+                >
+                  <span
+                    class="vlist-r"
+                  >
+                    <span
+                      class="vlist"
+                      style="height:1.6513970000000002em;"
+                    >
+                      <span
+                        style="top:-1.882887em;margin-left:0em;"
+                      >
+                        <span
+                          class="pstrut"
+                          style="height:3.05em;"
+                        />
+                        <span
+                          class="sizing reset-size6 size3 mtight"
+                        >
+                          <span
+                            class="mord mtight"
+                          >
+                            0
+                          </span>
+                        </span>
+                      </span>
+                      <span
+                        style="top:-3.050005em;"
+                      >
+                        <span
+                          class="pstrut"
+                          style="height:3.05em;"
+                        />
+                        <span>
+                          <span
+                            class="mop op-symbol large-op"
+                          >
+                            ∑
+                          </span>
+                        </span>
+                      </span>
+                      <span
+                        style="top:-4.3000050000000005em;margin-left:0em;"
+                      >
+                        <span
+                          class="pstrut"
+                          style="height:3.05em;"
+                        />
+                        <span
+                          class="sizing reset-size6 size3 mtight"
+                        >
+                          <span
+                            class="mord mtight"
+                          >
+                            ∞
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      class="vlist-s"
+                    >
+                      ​
+                    </span>
+                  </span>
+                  <span
+                    class="vlist-r"
+                  >
+                    <span
+                      class="vlist"
+                      style="height:1.267113em;"
+                    >
+                      <span />
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`TeX props updated 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -15,11 +15,11 @@
+                  <munderover>
+                    <mo>
+                      ∑
+                    </mo>
+                    <mn>
+-                     0
++                     1
+                    </mn>
+                    <mi
+                      mathvariant=\\"normal\\"
+                    >
+                      ∞
+@@ -27,11 +27,11 @@
+                  </munderover>
+                </mrow>
+                <annotation
+                  encoding=\\"application/x-tex\\"
+                >
+-                 \\\\sum_0^\\\\infty
++                 \\\\sum_1^\\\\infty
+                </annotation>
+              </semantics>
+            </math>
+          </span>
+          <span
+@@ -69,11 +69,11 @@
+                          class=\\"sizing reset-size6 size3 mtight\\"
+                        >
+                          <span
+                            class=\\"mord mtight\\"
+                          >
+-                           0
++                           1
+                          </span>
+                        </span>
+                      </span>
+                      <span
+                        style=\\"top:-3.050005em;\\""
+`;

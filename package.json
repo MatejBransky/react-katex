@@ -1,8 +1,27 @@
 {
   "name": "react-katex",
   "version": "2.0.3",
+  "description": "Display math in TeX with KaTeX and ReactJS",
+  "keywords": [
+    "react",
+    "tex",
+    "latex",
+    "math",
+    "katex"
+  ],
+  "homepage": "https://github.com/talyssonoc/react-katex",
   "main": "dist/react-katex.js",
-  "author": "Matej Mazur",
+  "author": {
+    "name": "Talysson",
+    "email": "talyssonoc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/talyssonoc/react-katex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/talyssonoc/react-katex/issues"
+  },
   "license": "MIT",
   "scripts": {
     "preinstall": "cd demo && npm install",
@@ -24,7 +43,8 @@
     "microbundle": "^0.7.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-testing-library": "^5.2.3"
+    "react-testing-library": "^5.2.3",
+    "snapshot-diff": "^0.4.0"
   },
   "peerDependencies": {
     "react": ">=16.6.0"
