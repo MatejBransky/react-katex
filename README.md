@@ -16,7 +16,7 @@ _(based on the https://github.com/talyssonoc/react-katex)_
 
 ```jsx
 import 'katex/dist/katex.min.css';
-import TeX from 'react-katex';
+import TeX from '@matejmazur/react-katex';
 ```
 
 ### Inline math
