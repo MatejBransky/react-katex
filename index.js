@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import KaTeX from 'katex';
 
@@ -15,6 +15,10 @@ import KaTeX from 'katex';
  * @return {React.ReactElement}
  */
 function TeX(props) {
+  const otherProps = omit(
+    ['children', 'math', 'inline', 'errorColor', 'renderError'],
+    props
+  );
   const Component = props.inline ? 'span' : 'div';
   const content = props.children || props.math;
 
@@ -25,13 +29,18 @@ function TeX(props) {
       throwOnError: !!props.renderError
     });
 
-    return <Component dangerouslySetInnerHTML={{ __html: html }} />;
+    return (
+      <Component {...otherProps} dangerouslySetInnerHTML={{ __html: html }} />
+    );
   } catch (error) {
     if (error instanceof KaTeX.ParseError || error instanceof TypeError) {
       return props.renderError ? (
         props.renderError(error)
       ) : (
-        <Component dangerouslySetInnerHTML={{ __html: error.message }} />
+        <Component
+          {...otherProps}
+          dangerouslySetInnerHTML={{ __html: error.message }}
+        />
       );
     }
 
@@ -47,4 +56,11 @@ TeX.propTypes = {
   renderError: PropTypes.func
 };
 
-export default TeX;
+export default memo(TeX);
+
+function omit(keys, obj) {
+  return Object.keys(obj).reduce(
+    (acc, key) => (keys.includes(key) ? acc : ((acc[key] = obj[key]), acc)),
+    {}
+  );
+}

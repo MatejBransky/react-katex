@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 
 import TeX from '../index';
@@ -15,9 +15,18 @@ const style = {
 const App = () => {
   const [value, setValue] = useState(_`y = k \cdot x + c`);
 
-  function handleChange(event) {
+  const handleChange = event => {
     setValue(event.target.value);
-  }
+  };
+  // TeX component is memoized so you can avoid rerendering
+  const renderError = useCallback(
+    err => (
+      <p>
+        <b>Custom</b> error message: {err.name}
+      </p>
+    ),
+    []
+  );
 
   return (
     <div style={style}>
@@ -25,7 +34,10 @@ const App = () => {
 
       <h2>Dynamic formula</h2>
       <input value={value} onChange={handleChange} />
-      <TeX>{value}</TeX>
+      {/* You can pass styles or classNames */}
+      <TeX style={{ minHeight: '30px', textAlign: 'center', margin: '1rem 0' }}>
+        {value}
+      </TeX>
 
       <h2>Inline math</h2>
       <p>
@@ -70,13 +82,7 @@ const App = () => {
       <span>
         <code>props.renderError</code>:
       </span>
-      <TeX
-        renderError={err => (
-          <p>
-            <b>Custom</b> error message: {err.name}
-          </p>
-        )}
-      >{_`\sum_{`}</TeX>
+      <TeX renderError={renderError}>{_`\sum_{`}</TeX>
 
       <span>simple expression:</span>
       <TeX>123 + 5 = 128</TeX>

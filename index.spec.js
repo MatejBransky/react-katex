@@ -89,4 +89,16 @@ describe('TeX', () => {
       expect($.container).toMatchSnapshot();
     });
   });
+
+  describe('passing through other props', () => {
+    test('style', () => {
+      const $ = render(<TeX style={{ background: 'blue' }}>1 + 2 = 3</TeX>);
+      expect($.container).toMatchSnapshot();
+    });
+
+    test('className', () => {
+      const $ = render(<TeX className="foo">1 + 2 = 3</TeX>);
+      expect($.container).toMatchSnapshot();
+    });
+  });
 });
