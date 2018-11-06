@@ -62,7 +62,8 @@ describe('TeX', () => {
 
     test('invalid type of expression in props.math', () => {
       let $;
-      global.console.error = jest.fn();
+      /* eslint-disable-next-line */
+      console.error = jest.fn();
       $ = render(<TeX math={123} />);
       expect(
         $.queryByText(/KaTeX can only parse string typed expression/)
