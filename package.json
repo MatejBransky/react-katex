@@ -1,6 +1,6 @@
 {
   "name": "react-katex",
-  "version": "2.0.3",
+  "version": "1.0.0",
   "description": "Display math in TeX with KaTeX and ReactJS",
   "keywords": [
     "react",
@@ -9,18 +9,18 @@
     "math",
     "katex"
   ],
-  "homepage": "https://github.com/talyssonoc/react-katex",
+  "homepage": "https://github.com/MatejMazur/react-katex",
   "main": "dist/react-katex.js",
   "author": {
-    "name": "Talysson",
-    "email": "talyssonoc@gmail.com"
+    "name": "Matej Mazur",
+    "email": "matej.mazur@mail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/talyssonoc/react-katex.git"
+    "url": "git@github.com:MatejMazur/react-katex.git"
   },
   "bugs": {
-    "url": "https://github.com/talyssonoc/react-katex/issues"
+    "url": "https://github.com/MatejMazur/react-katex/issues"
   },
   "license": "MIT",
   "scripts": {
