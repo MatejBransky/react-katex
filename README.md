@@ -24,8 +24,6 @@ import TeX from '@matejmazur/react-katex';
 Display math in the middle of the text.
 
 ```jsx
-var InlineMath = ReactKaTeX.InlineMath;
-
 ReactDOM.render(
   <TeX math="\\int_0^\\infty x^2 dx" inline />,
   document.getElementById('math')
