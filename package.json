@@ -36,9 +36,13 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-jest": "^21.27.1",
+    "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "microbundle": "^0.7.0",
     "react": "^16.6.0",
