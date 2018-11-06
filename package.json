@@ -1,6 +1,6 @@
 {
   "name": "@matejmazur/react-katex",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Display math in TeX with KaTeX and ReactJS",
   "keywords": [
     "react",
@@ -11,6 +11,9 @@
   ],
   "homepage": "https://github.com/MatejMazur/react-katex",
   "main": "dist/react-katex.js",
+  "umd:main": "dist/react-katex.umd.js",
+  "module": "dist/react-katex.mjs",
+  "source": "index.js",
   "author": {
     "name": "Matej Mazur",
     "email": "matej.mazur@mail.com"
