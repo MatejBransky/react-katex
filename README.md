@@ -7,9 +7,9 @@ _(based on the https://github.com/talyssonoc/react-katex)_
 ## Installation
 
 ```sh
-  $ npm install react-katex
+  $ npm install @matejmazur/react-katex
   # or
-  $ yarn add react-katex
+  $ yarn add @matejmazur/react-katex
 ```
 
 ## Usage
