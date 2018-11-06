@@ -1,0 +1,8 @@
+node_modules
+demo
+docs
+__snapshots__
+*.log
+
+# don't ignore .npmignore files
+!.npmignore
