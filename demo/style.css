@@ -1,0 +1,32 @@
+html,
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+textarea {
+  width: 100% !important;
+  min-height: 1rem;
+  resize: vertical;
+}
+
+code {
+  padding: 1px 3px;
+  font-size: 0.9rem;
+  color: rgb(31, 31, 31);
+  background: rgb(240, 240, 240);
+  border-radius: 2px;
+}
+
+.app {
+  max-width: 500px;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+.output {
+  min-height: 30px;
+  text-align: center;
+  margin: 1rem 0;
+}

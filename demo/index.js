@@ -1,16 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import TeX from '@matejmazur/react-katex';
+import './style.css';
 
 const _ = String.raw;
-const style = {
-  maxWidth: '500px',
-  padding: '2rem',
-  paddingBottom: '3rem',
-  margin: '0 auto',
-  border: '1px solid gray'
-};
 
 class App extends React.Component {
   constructor(props) {
@@ -27,15 +20,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={style}>
+      <div className="app">
         <h1>Demo of react-katex</h1>
 
         <h2>Dynamic formula</h2>
-        <input value={this.state.value} onChange={this.handleChange} />
+        <textarea
+          value={this.state.value}
+          onChange={this.handleChange}
+          spellCheck={false}
+        />
         {/* You can pass styles or classNames */}
         <TeX
           block
-          style={{ minHeight: '30px', textAlign: 'center', margin: '1rem 0' }}
+          className="output"
           // you can change directly KaTeX options!
           settings={{ macros: { '*': _`\cdot` } }}
         >
