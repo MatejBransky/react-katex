@@ -52,13 +52,6 @@ class App extends React.Component {
         <p>
           This is an example of inline math (via <code>props.children</code>
           ): <TeX>\int_0^\infty x^2 dx</TeX>.<br />
-          <i>
-            Note: you must use curly braces if you want to use chars like &quot;
-            {'{'}
-            &quot;, &quot;
-            {'}'}
-            &quot;.
-          </i>
         </p>
         <p>
           And the next one is written via <code>props.math</code>:{' '}
