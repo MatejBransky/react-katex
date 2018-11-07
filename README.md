@@ -1,8 +1,7 @@
 # react-katex
 
 > Display math expressions with [KaTeX](https://khan.github.io/KaTeX/) and React
-
-__Demo__: https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo
+> _Demo: https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo_
 
 _(based on the https://github.com/talyssonoc/react-katex)_
 
