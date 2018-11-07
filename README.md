@@ -176,7 +176,7 @@ You can change directly [all KaTeX options](https://katex.org/docs/options.html)
 
 ```jsx
 ReactDOM.render(
-  <TeX settings={{ macros: { '*': 'cdot' } }}>y = k * x + c</TeX>
+  <TeX settings={{ macros: { '*': '\\cdot' } }}>y = k * x + c</TeX>
 );
 ```
 
