@@ -2,7 +2,7 @@
 
 ![react-katex-logo](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/react-katex-logo.png)
 
-> Display math expressions with [KaTeX](https://khan.github.io/KaTeX/) and React
+> Display math expressions with [KaTeX](https://khan.github.io/KaTeX/) and [React](https://reactjs.org/)
 >
 > _Demo: https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo_
 
