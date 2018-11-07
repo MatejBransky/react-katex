@@ -79,7 +79,9 @@ const App = () => {
       <span>
         <code>props.errorColor</code>:
       </span>
-      <TeX errorColor="#cc0000">\int_0^\infty x^2 dx \inta</TeX>
+      <TeX errorColor="#cc0000" block>
+        \int_0^\infty x^2 dx \inta
+      </TeX>
 
       <span>
         <code>props.renderError</code>:
