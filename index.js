@@ -2,18 +2,6 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import KaTeX from 'katex';
 
-/**
- * @typedef {object} TeXProps
- * @prop {string} [children]
- * @prop {string} [math]
- * @prop {boolean} [block]
- * @prop {string} [errorColor]
- * @prop {(error: TypeError|KaTeX.ParseError) => React.ReactElement} [renderError]
- *
- * Renders LaTeX math
- * @param {TeXProps} props
- * @return {React.ReactElement}
- */
 function TeX(props) {
   const otherProps = omit(
     ['children', 'math', 'block', 'errorColor', 'renderError', 'settings'],
@@ -65,6 +53,9 @@ TeX.propTypes = {
   settings: PropTypes.object
 };
 
+/**
+ * ssss
+ */
 export default memo(TeX);
 
 function omit(keys, obj) {
