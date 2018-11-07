@@ -1,7 +1,6 @@
 # react-katex
 
-<img src="docs/react-logo.svg" height="35" alt="katex-logo" />
-<img src="docs/katex-logo.svg" height="30" alt="katex-logo" />
+![react-katex-logo](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/react-katex-logo.png)
 
 > Display math expressions with [KaTeX](https://khan.github.io/KaTeX/) and React
 >
