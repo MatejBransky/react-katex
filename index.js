@@ -53,9 +53,6 @@ TeX.propTypes = {
   settings: PropTypes.object
 };
 
-/**
- * ssss
- */
 export default memo(TeX);
 
 function omit(keys, obj) {
