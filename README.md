@@ -39,7 +39,7 @@ ReactDOM.render(
 
 It will be rendered like this:
 
-![Inline math](docs/inline.png)
+![Inline math](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/inline.png)
 
 ### Block math
 
@@ -61,7 +61,7 @@ ReactDOM.render(
 
 It will be rendered like this:
 
-![Block math](docs/block.png)
+![Block math](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/block.png)
 
 **Note:**<br>
 Don't forget to import KaTeX CSS file.
@@ -85,7 +85,7 @@ ReactDOM.render(
 
 This will be rendered like so:
 
-![KaTeX error](docs/error.png)
+![KaTeX error](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/error.png)
 
 #### Custom error message
 
@@ -107,7 +107,7 @@ ReactDOM.render(
 
 This will render `<b>Fail: ParseError</b>`:
 
-![renderError](docs/rendererror.png)
+![renderError](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/rendererror.png)
 
 ### Escaping expressions
 
