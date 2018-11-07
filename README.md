@@ -18,9 +18,9 @@
 ## Installation
 
 ```sh
-  $ npm install @matejmazur/react-katex
+  $ npm install katex @matejmazur/react-katex
   # or
-  $ yarn add @matejmazur/react-katex
+  $ yarn add katex @matejmazur/react-katex
 ```
 
 ## Usage
