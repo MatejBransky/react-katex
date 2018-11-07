@@ -3,6 +3,9 @@ demo
 docs
 __snapshots__
 *.log
+.editorconfig
+.travis.yml
+.eslintrc.js
 
 # don't ignore .npmignore files
 !.npmignore
