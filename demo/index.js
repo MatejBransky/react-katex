@@ -40,8 +40,8 @@ class App extends React.Component {
         </TeX>
 
         <small>
-          You can notice that in the code is written the custom macro for
-          interpunct so you can use &quot;
+          You can notice that in the code is written the custom macro (via{' '}
+          <code>props.settings</code>) for interpunct so you can use &quot;
           <code>*</code>
           &quot; instead of &quot;
           <code>\cdot</code>
