@@ -27,7 +27,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cd demo && npm start",
-    "build": "microbundle --jsx React.createElement",
+    "build": "microbundle --jsx React.createElement --name TeX",
     "dev": "microbundle watch",
     "test": "jest",
     "prepublish": "npm run build"
