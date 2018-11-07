@@ -172,4 +172,5 @@ ReactDOM.render(
 ```
 
 Result:
+
 ![macros](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/macros.png)
