@@ -8,7 +8,8 @@
     "start": "rimraf dist && parcel index.html"
   },
   "dependencies": {
-    "react": "^16.7.0-alpha.0",
+    "@matejmazur/react-katex": "^2.0.4",
+    "react": ">=16.6.0",
     "react-dom": "^16.7.0-alpha.0"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TeX from '../index';
+import TeX from '@matejmazur/react-katex';
 
 const _ = String.raw;
 const style = {
