@@ -42,7 +42,7 @@ const App = () => {
       <h2>Inline math</h2>
       <p>
         This is an example of inline math (via <code>props.children</code>
-        ): <TeX inline>\int_0^\infty x^2 dx</TeX>.<br />
+        ): <TeX>\int_0^\infty x^2 dx</TeX>.<br />
         <i>
           (you must use curly braces if you want to use chars like &quot;
           {'{'}
@@ -53,7 +53,7 @@ const App = () => {
       </p>
       <p>
         And the next one is written via <code>props.math</code>:{' '}
-        <TeX inline math={_`\int_0^\infty x^2 dx`} />.
+        <TeX math={_`\int_0^\infty x^2 dx`} />.
       </p>
 
       <h2>Block math</h2>
@@ -61,7 +61,7 @@ const App = () => {
       <span>
         via <code>props.children</code>:
       </span>
-      <TeX>{_`
+      <TeX block>{_`
         \begin{pmatrix}
           1 & 0 & 0 \\
           0 & 1 & 0 \\
@@ -72,7 +72,7 @@ const App = () => {
       <span>
         via <code>props.math</code>:
       </span>
-      <TeX math={_`\int_0^\infty x^2 dx`} />
+      <TeX math={_`\int_0^\infty x^2 dx`} block />
 
       <h2>Error handling</h2>
 
@@ -84,10 +84,10 @@ const App = () => {
       <span>
         <code>props.renderError</code>:
       </span>
-      <TeX renderError={renderError}>{_`\sum_{`}</TeX>
+      <TeX renderError={renderError} block>{_`\sum_{`}</TeX>
 
       <span>simple expression:</span>
-      <TeX>123 + 5 = 128</TeX>
+      <TeX block>123 + 5 = 128</TeX>
     </div>
   );
 };

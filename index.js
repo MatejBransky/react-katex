@@ -6,7 +6,7 @@ import KaTeX from 'katex';
  * @typedef {object} TeXProps
  * @prop {string} [children]
  * @prop {string} [math]
- * @prop {boolean} [inline]
+ * @prop {boolean} [block]
  * @prop {string} [errorColor]
  * @prop {(error: TypeError|KaTeX.ParseError) => React.ReactElement} [renderError]
  *
@@ -16,15 +16,15 @@ import KaTeX from 'katex';
  */
 function TeX(props) {
   const otherProps = omit(
-    ['children', 'math', 'inline', 'errorColor', 'renderError'],
+    ['children', 'math', 'block', 'errorColor', 'renderError'],
     props
   );
-  const Component = props.inline ? 'span' : 'div';
+  const Component = props.block ? 'div' : 'span';
   const content = props.children || props.math;
 
   try {
     const html = KaTeX.renderToString(content, {
-      displayMode: !props.inline,
+      displayMode: !!props.block,
       errorColor: props.errorColor,
       throwOnError: !!props.renderError
     });
@@ -51,7 +51,7 @@ function TeX(props) {
 TeX.propTypes = {
   children: PropTypes.string,
   math: PropTypes.string,
-  inline: PropTypes.bool,
+  block: PropTypes.bool,
   errorColor: PropTypes.string,
   renderError: PropTypes.func
 };

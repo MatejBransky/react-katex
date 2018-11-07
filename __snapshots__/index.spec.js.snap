@@ -2,7 +2,7 @@
 
 exports[`TeX error handling error is caused while parsing math expression 1`] = `
 <div>
-  <div>
+  <span>
     <span
       class="katex-error"
       style="color:#cc0000"
@@ -10,129 +10,121 @@ exports[`TeX error handling error is caused while parsing math expression 1`] = 
     >
       \\sum_{
     </span>
-  </div>
+  </span>
 </div>
 `;
 
 exports[`TeX error handling formula with the wrong part highlighted in default color 1`] = `
 <div>
-  <div>
+  <span>
     <span
-      class="katex-display"
+      class="katex"
     >
       <span
-        class="katex"
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <mstyle
+                mathcolor="#cc0000"
+              >
+                <mtext>
+                  \\inta
+                </mtext>
+              </mstyle>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              \\inta
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
       >
         <span
-          class="katex-mathml"
-        >
-          <math>
-            <semantics>
-              <mrow>
-                <mstyle
-                  mathcolor="#cc0000"
-                >
-                  <mtext>
-                    \\inta
-                  </mtext>
-                </mstyle>
-              </mrow>
-              <annotation
-                encoding="application/x-tex"
-              >
-                \\inta
-              </annotation>
-            </semantics>
-          </math>
-        </span>
-        <span
-          aria-hidden="true"
-          class="katex-html"
+          class="base"
         >
           <span
-            class="base"
+            class="strut"
+            style="height:1em;vertical-align:-0.25em;"
+          />
+          <span
+            class="mord text"
+            style="color:#cc0000;"
           >
             <span
-              class="strut"
-              style="height:1em;vertical-align:-0.25em;"
-            />
-            <span
-              class="mord text"
+              class="mord"
               style="color:#cc0000;"
             >
-              <span
-                class="mord"
-                style="color:#cc0000;"
-              >
-                \\inta
-              </span>
+              \\inta
             </span>
           </span>
         </span>
       </span>
     </span>
-  </div>
+  </span>
 </div>
 `;
 
 exports[`TeX error handling props.errorColor 1`] = `
 <div>
-  <div>
+  <span>
     <span
-      class="katex-display"
+      class="katex"
     >
       <span
-        class="katex"
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <mstyle
+                mathcolor="#bb0000"
+              >
+                <mtext>
+                  \\inta
+                </mtext>
+              </mstyle>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              \\inta
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
       >
         <span
-          class="katex-mathml"
-        >
-          <math>
-            <semantics>
-              <mrow>
-                <mstyle
-                  mathcolor="#bb0000"
-                >
-                  <mtext>
-                    \\inta
-                  </mtext>
-                </mstyle>
-              </mrow>
-              <annotation
-                encoding="application/x-tex"
-              >
-                \\inta
-              </annotation>
-            </semantics>
-          </math>
-        </span>
-        <span
-          aria-hidden="true"
-          class="katex-html"
+          class="base"
         >
           <span
-            class="base"
+            class="strut"
+            style="height:1em;vertical-align:-0.25em;"
+          />
+          <span
+            class="mord text"
+            style="color:#bb0000;"
           >
             <span
-              class="strut"
-              style="height:1em;vertical-align:-0.25em;"
-            />
-            <span
-              class="mord text"
+              class="mord"
               style="color:#bb0000;"
             >
-              <span
-                class="mord"
-                style="color:#bb0000;"
-              >
-                \\inta
-              </span>
+              \\inta
             </span>
           </span>
         </span>
       </span>
     </span>
-  </div>
+  </span>
 </div>
 `;
 
@@ -156,54 +148,60 @@ exports[`TeX error handling props.renderError: invalid type of expression in pro
 
 exports[`TeX expression via props.children 1`] = `
 <div>
-  <div>
+  <span>
     <span
-      class="katex-display"
+      class="katex"
     >
       <span
-        class="katex"
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <msubsup>
+                <mo>
+                  ∑
+                </mo>
+                <mn>
+                  0
+                </mn>
+                <mi
+                  mathvariant="normal"
+                >
+                  ∞
+                </mi>
+              </msubsup>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              \\sum_0^\\infty
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
       >
         <span
-          class="katex-mathml"
-        >
-          <math>
-            <semantics>
-              <mrow>
-                <munderover>
-                  <mo>
-                    ∑
-                  </mo>
-                  <mn>
-                    0
-                  </mn>
-                  <mi
-                    mathvariant="normal"
-                  >
-                    ∞
-                  </mi>
-                </munderover>
-              </mrow>
-              <annotation
-                encoding="application/x-tex"
-              >
-                \\sum_0^\\infty
-              </annotation>
-            </semantics>
-          </math>
-        </span>
-        <span
-          aria-hidden="true"
-          class="katex-html"
+          class="base"
         >
           <span
-            class="base"
+            class="strut"
+            style="height:1.104002em;vertical-align:-0.29971000000000003em;"
+          />
+          <span
+            class="mop"
           >
             <span
-              class="strut"
-              style="height:2.9185100000000004em;vertical-align:-1.267113em;"
-            />
+              class="mop op-symbol small-op"
+              style="position:relative;top:-0.0000050000000000050004em;"
+            >
+              ∑
+            </span>
             <span
-              class="mop op-limits"
+              class="msupsub"
             >
               <span
                 class="vlist-t vlist-t2"
@@ -213,14 +211,14 @@ exports[`TeX expression via props.children 1`] = `
                 >
                   <span
                     class="vlist"
-                    style="height:1.6513970000000002em;"
+                    style="height:0.804292em;"
                   >
                     <span
-                      style="top:-1.882887em;margin-left:0em;"
+                      style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"
                     >
                       <span
                         class="pstrut"
-                        style="height:3.05em;"
+                        style="height:2.7em;"
                       />
                       <span
                         class="sizing reset-size6 size3 mtight"
@@ -233,26 +231,11 @@ exports[`TeX expression via props.children 1`] = `
                       </span>
                     </span>
                     <span
-                      style="top:-3.050005em;"
+                      style="top:-3.2029em;margin-right:0.05em;"
                     >
                       <span
                         class="pstrut"
-                        style="height:3.05em;"
-                      />
-                      <span>
-                        <span
-                          class="mop op-symbol large-op"
-                        >
-                          ∑
-                        </span>
-                      </span>
-                    </span>
-                    <span
-                      style="top:-4.3000050000000005em;margin-left:0em;"
-                    >
-                      <span
-                        class="pstrut"
-                        style="height:3.05em;"
+                        style="height:2.7em;"
                       />
                       <span
                         class="sizing reset-size6 size3 mtight"
@@ -276,7 +259,7 @@ exports[`TeX expression via props.children 1`] = `
                 >
                   <span
                     class="vlist"
-                    style="height:1.267113em;"
+                    style="height:0.29971000000000003em;"
                   >
                     <span />
                   </span>
@@ -287,7 +270,7 @@ exports[`TeX expression via props.children 1`] = `
         </span>
       </span>
     </span>
-  </div>
+  </span>
 </div>
 `;
 
@@ -296,54 +279,60 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
+      <span>
         <span
-          class="katex-display"
+          class="katex"
         >
           <span
-            class="katex"
+            class="katex-mathml"
+          >
+            <math>
+              <semantics>
+                <mrow>
+                  <msubsup>
+                    <mo>
+                      ∑
+                    </mo>
+                    <mn>
+                      0
+                    </mn>
+                    <mi
+                      mathvariant="normal"
+                    >
+                      ∞
+                    </mi>
+                  </msubsup>
+                </mrow>
+                <annotation
+                  encoding="application/x-tex"
+                >
+                  \\sum_0^\\infty
+                </annotation>
+              </semantics>
+            </math>
+          </span>
+          <span
+            aria-hidden="true"
+            class="katex-html"
           >
             <span
-              class="katex-mathml"
-            >
-              <math>
-                <semantics>
-                  <mrow>
-                    <munderover>
-                      <mo>
-                        ∑
-                      </mo>
-                      <mn>
-                        0
-                      </mn>
-                      <mi
-                        mathvariant="normal"
-                      >
-                        ∞
-                      </mi>
-                    </munderover>
-                  </mrow>
-                  <annotation
-                    encoding="application/x-tex"
-                  >
-                    \\sum_0^\\infty
-                  </annotation>
-                </semantics>
-              </math>
-            </span>
-            <span
-              aria-hidden="true"
-              class="katex-html"
+              class="base"
             >
               <span
-                class="base"
+                class="strut"
+                style="height:1.104002em;vertical-align:-0.29971000000000003em;"
+              />
+              <span
+                class="mop"
               >
                 <span
-                  class="strut"
-                  style="height:2.9185100000000004em;vertical-align:-1.267113em;"
-                />
+                  class="mop op-symbol small-op"
+                  style="position:relative;top:-0.0000050000000000050004em;"
+                >
+                  ∑
+                </span>
                 <span
-                  class="mop op-limits"
+                  class="msupsub"
                 >
                   <span
                     class="vlist-t vlist-t2"
@@ -353,14 +342,14 @@ Object {
                     >
                       <span
                         class="vlist"
-                        style="height:1.6513970000000002em;"
+                        style="height:0.804292em;"
                       >
                         <span
-                          style="top:-1.882887em;margin-left:0em;"
+                          style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"
                         >
                           <span
                             class="pstrut"
-                            style="height:3.05em;"
+                            style="height:2.7em;"
                           />
                           <span
                             class="sizing reset-size6 size3 mtight"
@@ -373,26 +362,11 @@ Object {
                           </span>
                         </span>
                         <span
-                          style="top:-3.050005em;"
+                          style="top:-3.2029em;margin-right:0.05em;"
                         >
                           <span
                             class="pstrut"
-                            style="height:3.05em;"
-                          />
-                          <span>
-                            <span
-                              class="mop op-symbol large-op"
-                            >
-                              ∑
-                            </span>
-                          </span>
-                        </span>
-                        <span
-                          style="top:-4.3000050000000005em;margin-left:0em;"
-                        >
-                          <span
-                            class="pstrut"
-                            style="height:3.05em;"
+                            style="height:2.7em;"
                           />
                           <span
                             class="sizing reset-size6 size3 mtight"
@@ -416,7 +390,7 @@ Object {
                     >
                       <span
                         class="vlist"
-                        style="height:1.267113em;"
+                        style="height:0.29971000000000003em;"
                       >
                         <span />
                       </span>
@@ -427,58 +401,64 @@ Object {
             </span>
           </span>
         </span>
-      </div>
+      </span>
     </div>
   </body>,
   "container": <div>
-    <div>
+    <span>
       <span
-        class="katex-display"
+        class="katex"
       >
         <span
-          class="katex"
+          class="katex-mathml"
+        >
+          <math>
+            <semantics>
+              <mrow>
+                <msubsup>
+                  <mo>
+                    ∑
+                  </mo>
+                  <mn>
+                    0
+                  </mn>
+                  <mi
+                    mathvariant="normal"
+                  >
+                    ∞
+                  </mi>
+                </msubsup>
+              </mrow>
+              <annotation
+                encoding="application/x-tex"
+              >
+                \\sum_0^\\infty
+              </annotation>
+            </semantics>
+          </math>
+        </span>
+        <span
+          aria-hidden="true"
+          class="katex-html"
         >
           <span
-            class="katex-mathml"
-          >
-            <math>
-              <semantics>
-                <mrow>
-                  <munderover>
-                    <mo>
-                      ∑
-                    </mo>
-                    <mn>
-                      0
-                    </mn>
-                    <mi
-                      mathvariant="normal"
-                    >
-                      ∞
-                    </mi>
-                  </munderover>
-                </mrow>
-                <annotation
-                  encoding="application/x-tex"
-                >
-                  \\sum_0^\\infty
-                </annotation>
-              </semantics>
-            </math>
-          </span>
-          <span
-            aria-hidden="true"
-            class="katex-html"
+            class="base"
           >
             <span
-              class="base"
+              class="strut"
+              style="height:1.104002em;vertical-align:-0.29971000000000003em;"
+            />
+            <span
+              class="mop"
             >
               <span
-                class="strut"
-                style="height:2.9185100000000004em;vertical-align:-1.267113em;"
-              />
+                class="mop op-symbol small-op"
+                style="position:relative;top:-0.0000050000000000050004em;"
+              >
+                ∑
+              </span>
               <span
-                class="mop op-limits"
+                class="msupsub"
               >
                 <span
                   class="vlist-t vlist-t2"
@@ -488,14 +468,14 @@ Object {
                   >
                     <span
                       class="vlist"
-                      style="height:1.6513970000000002em;"
+                      style="height:0.804292em;"
                     >
                       <span
-                        style="top:-1.882887em;margin-left:0em;"
+                        style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"
                       >
                         <span
                           class="pstrut"
-                          style="height:3.05em;"
+                          style="height:2.7em;"
                         />
                         <span
                           class="sizing reset-size6 size3 mtight"
@@ -508,26 +488,11 @@ Object {
                         </span>
                       </span>
                       <span
-                        style="top:-3.050005em;"
+                        style="top:-3.2029em;margin-right:0.05em;"
                       >
                         <span
                           class="pstrut"
-                          style="height:3.05em;"
-                        />
-                        <span>
-                          <span
-                            class="mop op-symbol large-op"
-                          >
-                            ∑
-                          </span>
-                        </span>
-                      </span>
-                      <span
-                        style="top:-4.3000050000000005em;margin-left:0em;"
-                      >
-                        <span
-                          class="pstrut"
-                          style="height:3.05em;"
+                          style="height:2.7em;"
                         />
                         <span
                           class="sizing reset-size6 size3 mtight"
@@ -551,7 +516,7 @@ Object {
                   >
                     <span
                       class="vlist"
-                      style="height:1.267113em;"
+                      style="height:0.29971000000000003em;"
                     >
                       <span />
                     </span>
@@ -562,7 +527,7 @@ Object {
           </span>
         </span>
       </span>
-    </div>
+    </span>
   </div>,
   "debug": [Function],
   "getAllByAltText": [Function],
@@ -608,235 +573,227 @@ Object {
 
 exports[`TeX passing through other props className 1`] = `
 <div>
-  <div
+  <span
     class="foo"
   >
     <span
-      class="katex-display"
+      class="katex"
     >
       <span
-        class="katex"
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <mn>
+                1
+              </mn>
+              <mo>
+                +
+              </mo>
+              <mn>
+                2
+              </mn>
+              <mo>
+                =
+              </mo>
+              <mn>
+                3
+              </mn>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              1 + 2 = 3
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
       >
         <span
-          class="katex-mathml"
+          class="base"
         >
-          <math>
-            <semantics>
-              <mrow>
-                <mn>
-                  1
-                </mn>
-                <mo>
-                  +
-                </mo>
-                <mn>
-                  2
-                </mn>
-                <mo>
-                  =
-                </mo>
-                <mn>
-                  3
-                </mn>
-              </mrow>
-              <annotation
-                encoding="application/x-tex"
-              >
-                1 + 2 = 3
-              </annotation>
-            </semantics>
-          </math>
+          <span
+            class="strut"
+            style="height:0.72777em;vertical-align:-0.08333em;"
+          />
+          <span
+            class="mord"
+          >
+            1
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2222222222222222em;"
+          />
+          <span
+            class="mbin"
+          >
+            +
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2222222222222222em;"
+          />
         </span>
         <span
-          aria-hidden="true"
-          class="katex-html"
+          class="base"
         >
           <span
-            class="base"
+            class="strut"
+            style="height:0.64444em;vertical-align:0em;"
+          />
+          <span
+            class="mord"
           >
-            <span
-              class="strut"
-              style="height:0.72777em;vertical-align:-0.08333em;"
-            />
-            <span
-              class="mord"
-            >
-              1
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2222222222222222em;"
-            />
-            <span
-              class="mbin"
-            >
-              +
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2222222222222222em;"
-            />
+            2
           </span>
           <span
-            class="base"
+            class="mspace"
+            style="margin-right:0.2777777777777778em;"
+          />
+          <span
+            class="mrel"
           >
-            <span
-              class="strut"
-              style="height:0.64444em;vertical-align:0em;"
-            />
-            <span
-              class="mord"
-            >
-              2
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2777777777777778em;"
-            />
-            <span
-              class="mrel"
-            >
-              =
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2777777777777778em;"
-            />
+            =
           </span>
           <span
-            class="base"
+            class="mspace"
+            style="margin-right:0.2777777777777778em;"
+          />
+        </span>
+        <span
+          class="base"
+        >
+          <span
+            class="strut"
+            style="height:0.64444em;vertical-align:0em;"
+          />
+          <span
+            class="mord"
           >
-            <span
-              class="strut"
-              style="height:0.64444em;vertical-align:0em;"
-            />
-            <span
-              class="mord"
-            >
-              3
-            </span>
+            3
           </span>
         </span>
       </span>
     </span>
-  </div>
+  </span>
 </div>
 `;
 
 exports[`TeX passing through other props style 1`] = `
 <div>
-  <div
+  <span
     style="background: blue;"
   >
     <span
-      class="katex-display"
+      class="katex"
     >
       <span
-        class="katex"
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <mn>
+                1
+              </mn>
+              <mo>
+                +
+              </mo>
+              <mn>
+                2
+              </mn>
+              <mo>
+                =
+              </mo>
+              <mn>
+                3
+              </mn>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              1 + 2 = 3
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
       >
         <span
-          class="katex-mathml"
+          class="base"
         >
-          <math>
-            <semantics>
-              <mrow>
-                <mn>
-                  1
-                </mn>
-                <mo>
-                  +
-                </mo>
-                <mn>
-                  2
-                </mn>
-                <mo>
-                  =
-                </mo>
-                <mn>
-                  3
-                </mn>
-              </mrow>
-              <annotation
-                encoding="application/x-tex"
-              >
-                1 + 2 = 3
-              </annotation>
-            </semantics>
-          </math>
+          <span
+            class="strut"
+            style="height:0.72777em;vertical-align:-0.08333em;"
+          />
+          <span
+            class="mord"
+          >
+            1
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2222222222222222em;"
+          />
+          <span
+            class="mbin"
+          >
+            +
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2222222222222222em;"
+          />
         </span>
         <span
-          aria-hidden="true"
-          class="katex-html"
+          class="base"
         >
           <span
-            class="base"
+            class="strut"
+            style="height:0.64444em;vertical-align:0em;"
+          />
+          <span
+            class="mord"
           >
-            <span
-              class="strut"
-              style="height:0.72777em;vertical-align:-0.08333em;"
-            />
-            <span
-              class="mord"
-            >
-              1
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2222222222222222em;"
-            />
-            <span
-              class="mbin"
-            >
-              +
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2222222222222222em;"
-            />
+            2
           </span>
           <span
-            class="base"
+            class="mspace"
+            style="margin-right:0.2777777777777778em;"
+          />
+          <span
+            class="mrel"
           >
-            <span
-              class="strut"
-              style="height:0.64444em;vertical-align:0em;"
-            />
-            <span
-              class="mord"
-            >
-              2
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2777777777777778em;"
-            />
-            <span
-              class="mrel"
-            >
-              =
-            </span>
-            <span
-              class="mspace"
-              style="margin-right:0.2777777777777778em;"
-            />
+            =
           </span>
           <span
-            class="base"
+            class="mspace"
+            style="margin-right:0.2777777777777778em;"
+          />
+        </span>
+        <span
+          class="base"
+        >
+          <span
+            class="strut"
+            style="height:0.64444em;vertical-align:0em;"
+          />
+          <span
+            class="mord"
           >
-            <span
-              class="strut"
-              style="height:0.64444em;vertical-align:0em;"
-            />
-            <span
-              class="mord"
-            >
-              3
-            </span>
+            3
           </span>
         </span>
       </span>
     </span>
-  </div>
+  </span>
 </div>
 `;
 
@@ -845,33 +802,33 @@ exports[`TeX props updated 1`] = `
 - First value
 + Second value
 
-@@ -15,11 +15,11 @@
-                  <munderover>
-                    <mo>
-                      ∑
-                    </mo>
-                    <mn>
--                     0
-+                     1
-                    </mn>
-                    <mi
-                      mathvariant=\\"normal\\"
-                    >
-                      ∞
-@@ -27,11 +27,11 @@
-                  </munderover>
-                </mrow>
-                <annotation
-                  encoding=\\"application/x-tex\\"
-                >
--                 \\\\sum_0^\\\\infty
-+                 \\\\sum_1^\\\\infty
-                </annotation>
-              </semantics>
-            </math>
-          </span>
-          <span
-@@ -69,11 +69,11 @@
+@@ -12,11 +12,11 @@
+                <msubsup>
+                  <mo>
+                    ∑
+                  </mo>
+                  <mn>
+-                   0
++                   1
+                  </mn>
+                  <mi
+                    mathvariant=\\"normal\\"
+                  >
+                    ∞
+@@ -24,11 +24,11 @@
+                </msubsup>
+              </mrow>
+              <annotation
+                encoding=\\"application/x-tex\\"
+              >
+-               \\\\sum_0^\\\\infty
++               \\\\sum_1^\\\\infty
+              </annotation>
+            </semantics>
+          </math>
+        </span>
+        <span
+@@ -75,11 +75,11 @@
                           class=\\"sizing reset-size6 size3 mtight\\"
                         >
                           <span
@@ -883,5 +840,5 @@ exports[`TeX props updated 1`] = `
                         </span>
                       </span>
                       <span
-                        style=\\"top:-3.050005em;\\""
+                        style=\\"top:-3.2029em;margin-right:0.05em;\\""
 `;

@@ -16,6 +16,18 @@ describe('TeX', () => {
     expect(render(<TeX math={_`\sum_0^\infty`} />)).toMatchSnapshot();
   });
 
+  test('inline math by default', () => {
+    const $ = render(<TeX data-testid="wrapper" math={_`\sum_0^\infty`} />);
+    expect($.getByTestId('wrapper').tagName).toBe('SPAN');
+  });
+
+  test('block math via props.block', () => {
+    const $ = render(
+      <TeX data-testid="wrapper" math={_`\sum_0^\infty`} block />
+    );
+    expect($.getByTestId('wrapper').tagName).toBe('DIV');
+  });
+
   test('props updated', () => {
     const $ = render(<TeX>\sum_0^\infty</TeX>);
     const $first = $.container.cloneNode(true);
