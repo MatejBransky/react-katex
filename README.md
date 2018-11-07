@@ -2,6 +2,8 @@
 
 > Display math expressions with [KaTeX](https://khan.github.io/KaTeX/) and React
 
+__Demo__: https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo
+
 _(based on the https://github.com/talyssonoc/react-katex)_
 
 ## Installation
