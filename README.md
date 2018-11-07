@@ -158,3 +158,18 @@ ReactDOM.render(
   document.getElementById('math')
 );
 ```
+
+### Configuring KaTeX
+
+You can change directly [all KaTeX options](https://katex.org/docs/options.html) via `props.settings`:
+
+**Example of adding a custom macro:**
+
+```jsx
+ReactDOM.render(
+  <TeX settings={{ macros: { '*': 'cdot' } }}>y = k * x + c</TeX>
+);
+```
+
+Result:
+![macros](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/macros.png)

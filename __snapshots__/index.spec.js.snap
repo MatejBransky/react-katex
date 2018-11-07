@@ -1,5 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TeX configuring KaTeX via props.settings 1`] = `
+<div>
+  <span>
+    <span
+      class="katex"
+    >
+      <span
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <mi>
+                y
+              </mi>
+              <mo>
+                =
+              </mo>
+              <mi>
+                k
+              </mi>
+              <mi>
+                c
+              </mi>
+              <mi>
+                d
+              </mi>
+              <mi>
+                o
+              </mi>
+              <mi>
+                t
+              </mi>
+              <mi>
+                x
+              </mi>
+              <mo>
+                +
+              </mo>
+              <mi>
+                c
+              </mi>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              y = k * x + c
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
+      >
+        <span
+          class="base"
+        >
+          <span
+            class="strut"
+            style="height:0.625em;vertical-align:-0.19444em;"
+          />
+          <span
+            class="mord mathdefault"
+            style="margin-right:0.03588em;"
+          >
+            y
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2777777777777778em;"
+          />
+          <span
+            class="mrel"
+          >
+            =
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2777777777777778em;"
+          />
+        </span>
+        <span
+          class="base"
+        >
+          <span
+            class="strut"
+            style="height:0.77777em;vertical-align:-0.08333em;"
+          />
+          <span
+            class="mord mathdefault"
+            style="margin-right:0.03148em;"
+          >
+            k
+          </span>
+          <span
+            class="mord mathdefault"
+          >
+            c
+          </span>
+          <span
+            class="mord mathdefault"
+          >
+            d
+          </span>
+          <span
+            class="mord mathdefault"
+          >
+            o
+          </span>
+          <span
+            class="mord mathdefault"
+          >
+            t
+          </span>
+          <span
+            class="mord mathdefault"
+          >
+            x
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2222222222222222em;"
+          />
+          <span
+            class="mbin"
+          >
+            +
+          </span>
+          <span
+            class="mspace"
+            style="margin-right:0.2222222222222222em;"
+          />
+        </span>
+        <span
+          class="base"
+        >
+          <span
+            class="strut"
+            style="height:0.43056em;vertical-align:0em;"
+          />
+          <span
+            class="mord mathdefault"
+          >
+            c
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
 exports[`TeX error handling error is caused while parsing math expression 1`] = `
 <div>
   <span>

@@ -28,6 +28,13 @@ describe('TeX', () => {
     expect($.getByTestId('wrapper').tagName).toBe('DIV');
   });
 
+  test('configuring KaTeX via props.settings', () => {
+    const $ = render(
+      <TeX settings={{ macros: { '*': 'cdot' } }}>y = k * x + c</TeX>
+    );
+    expect($.container).toMatchSnapshot();
+  });
+
   test('props updated', () => {
     const $ = render(<TeX>\sum_0^\infty</TeX>);
     const $first = $.container.cloneNode(true);

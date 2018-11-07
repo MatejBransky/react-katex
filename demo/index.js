@@ -16,7 +16,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: _`y = k \cdot x + c`
+      value: _`y = k * x + c`
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -36,9 +36,20 @@ class App extends React.Component {
         <TeX
           block
           style={{ minHeight: '30px', textAlign: 'center', margin: '1rem 0' }}
+          // you can change directly KaTeX options!
+          settings={{ macros: { '*': _`\cdot` } }}
         >
           {this.state.value}
         </TeX>
+
+        <small>
+          You can notice that in the code is written the custom macro for
+          interpunct so you can use &quot;
+          <code>*</code>
+          &quot; instead of &quot;
+          <code>\cdot</code>
+          &quot;.
+        </small>
 
         <h2>Inline math</h2>
         <p>

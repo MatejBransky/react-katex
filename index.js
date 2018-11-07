@@ -16,18 +16,26 @@ import KaTeX from 'katex';
  */
 function TeX(props) {
   const otherProps = omit(
-    ['children', 'math', 'block', 'errorColor', 'renderError'],
+    ['children', 'math', 'block', 'errorColor', 'renderError', 'settings'],
     props
   );
   const Component = props.block ? 'div' : 'span';
   const content = props.children || props.math;
 
   try {
-    const html = KaTeX.renderToString(content, {
-      displayMode: !!props.block,
-      errorColor: props.errorColor,
-      throwOnError: !!props.renderError
-    });
+    const html = KaTeX.renderToString(
+      content,
+      Object.assign(
+        {},
+        {
+          displayMode: !!props.block,
+          errorColor: props.errorColor,
+          throwOnError: !!props.renderError
+        },
+        // you can rewrite all KaTeX options directly
+        props.settings
+      )
+    );
 
     return (
       <Component {...otherProps} dangerouslySetInnerHTML={{ __html: html }} />
@@ -53,7 +61,8 @@ TeX.propTypes = {
   math: PropTypes.string,
   block: PropTypes.bool,
   errorColor: PropTypes.string,
-  renderError: PropTypes.func
+  renderError: PropTypes.func,
+  settings: PropTypes.object
 };
 
 export default memo(TeX);
