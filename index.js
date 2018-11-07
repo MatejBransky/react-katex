@@ -2,49 +2,62 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import KaTeX from 'katex';
 
-/**
- * @typedef {object} TeXProps
- * @prop {string} [children]
- * @prop {string} [math]
- * @prop {boolean} [block]
- * @prop {string} [errorColor]
- * @prop {(error: TypeError|KaTeX.ParseError) => React.ReactElement} [renderError]
- *
- * Renders LaTeX math
- * @param {TeXProps} props
- * @return {React.ReactElement}
- */
-function TeX(props) {
-  const otherProps = omit(
-    ['children', 'math', 'block', 'errorColor', 'renderError'],
-    props
-  );
-  const Component = props.block ? 'div' : 'span';
-  const content = props.children || props.math;
+class TeX extends React.Component {
+  constructor(props) {
+    super(props);
+    this.verifiedContent = ' ';
+  }
 
-  try {
-    const html = KaTeX.renderToString(content, {
+  render() {
+    let html, error;
+    const props = this.props;
+    const verifiedContent = this.verifiedContent;
+    const otherProps = omit(
+      [
+        'children',
+        'math',
+        'block',
+        'errorColor',
+        'renderError',
+        'suppressError'
+      ],
+      props
+    );
+    const content = props.children || props.math;
+    const Component = props.block ? 'div' : 'span';
+    const settings = {
       displayMode: !!props.block,
       errorColor: props.errorColor,
-      throwOnError: !!props.renderError
-    });
+      throwOnError: !!props.renderError || props.suppressError
+    };
 
-    return (
-      <Component {...otherProps} dangerouslySetInnerHTML={{ __html: html }} />
-    );
-  } catch (error) {
-    if (error instanceof KaTeX.ParseError || error instanceof TypeError) {
-      return props.renderError ? (
-        props.renderError(error)
-      ) : (
-        <Component
-          {...otherProps}
-          dangerouslySetInnerHTML={{ __html: error.message }}
-        />
-      );
+    try {
+      html = KaTeX.renderToString(content, settings);
+      this.verifiedContent = content;
+    } catch (err) {
+      if (props.suppressError) {
+        html = KaTeX.renderToString(verifiedContent, settings);
+      } else {
+        if (err instanceof KaTeX.ParseError || err instanceof TypeError) {
+          error = err;
+        }
+      }
+
+      throw err;
     }
 
-    throw error;
+    if (!html && !error) return null;
+
+    return html ? (
+      <Component {...otherProps} dangerouslySetInnerHTML={{ __html: html }} />
+    ) : props.renderError ? (
+      props.renderError(error)
+    ) : (
+      <Component
+        {...otherProps}
+        dangerouslySetInnerHTML={{ __html: error.message }}
+      />
+    );
   }
 }
 
@@ -53,7 +66,8 @@ TeX.propTypes = {
   math: PropTypes.string,
   block: PropTypes.bool,
   errorColor: PropTypes.string,
-  renderError: PropTypes.func
+  renderError: PropTypes.func,
+  suppressError: PropTypes.bool
 };
 
 export default memo(TeX);
