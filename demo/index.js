@@ -35,7 +35,10 @@ const App = () => {
       <h2>Dynamic formula</h2>
       <input value={value} onChange={handleChange} />
       {/* You can pass styles or classNames */}
-      <TeX style={{ minHeight: '30px', textAlign: 'center', margin: '1rem 0' }}>
+      <TeX
+        block
+        style={{ minHeight: '30px', textAlign: 'center', margin: '1rem 0' }}
+      >
         {value}
       </TeX>
 
