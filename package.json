@@ -29,7 +29,8 @@
     "start": "cd demo && npm start",
     "build": "microbundle --jsx React.createElement",
     "dev": "microbundle watch",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "husky": {
     "hooks": {
