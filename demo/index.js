@@ -36,7 +36,6 @@ const App = () => {
       <input value={value} onChange={handleChange} />
       {/* You can pass styles or classNames */}
       <TeX
-        suppressError
         block
         style={{ minHeight: '30px', textAlign: 'center', margin: '1rem 0' }}
       >
