@@ -7,8 +7,10 @@
   Display math expressions with <a href="https://khan.github.io/KaTeX" target="_blank">KaTeX</a> and <a href="https://reactjs.org" target="_blank">React</a>.
 </p>
 <p>
-  <a href="https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo" target="_blank">Examples</a> <br />
-  <i style="color: #ccc;">(based on the <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)</i>
+  <a href="https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo" target="_blank">Examples</a>
+</p>
+<p>
+  <i><small>(based on the <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)</small></i>
 </p>
 </div>
 <hr />
