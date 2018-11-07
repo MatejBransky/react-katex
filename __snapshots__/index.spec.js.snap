@@ -428,251 +428,121 @@ exports[`TeX expression via props.children 1`] = `
 `;
 
 exports[`TeX expression via props.math 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <span>
-        <span
-          class="katex"
-        >
-          <span
-            class="katex-mathml"
-          >
-            <math>
-              <semantics>
-                <mrow>
-                  <msubsup>
-                    <mo>
-                      ∑
-                    </mo>
-                    <mn>
-                      0
-                    </mn>
-                    <mi
-                      mathvariant="normal"
-                    >
-                      ∞
-                    </mi>
-                  </msubsup>
-                </mrow>
-                <annotation
-                  encoding="application/x-tex"
-                >
-                  \\sum_0^\\infty
-                </annotation>
-              </semantics>
-            </math>
-          </span>
-          <span
-            aria-hidden="true"
-            class="katex-html"
-          >
-            <span
-              class="base"
-            >
-              <span
-                class="strut"
-                style="height:1.104002em;vertical-align:-0.29971000000000003em;"
-              />
-              <span
-                class="mop"
-              >
-                <span
-                  class="mop op-symbol small-op"
-                  style="position:relative;top:-0.0000050000000000050004em;"
-                >
-                  ∑
-                </span>
-                <span
-                  class="msupsub"
-                >
-                  <span
-                    class="vlist-t vlist-t2"
-                  >
-                    <span
-                      class="vlist-r"
-                    >
-                      <span
-                        class="vlist"
-                        style="height:0.804292em;"
-                      >
-                        <span
-                          style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"
-                        >
-                          <span
-                            class="pstrut"
-                            style="height:2.7em;"
-                          />
-                          <span
-                            class="sizing reset-size6 size3 mtight"
-                          >
-                            <span
-                              class="mord mtight"
-                            >
-                              0
-                            </span>
-                          </span>
-                        </span>
-                        <span
-                          style="top:-3.2029em;margin-right:0.05em;"
-                        >
-                          <span
-                            class="pstrut"
-                            style="height:2.7em;"
-                          />
-                          <span
-                            class="sizing reset-size6 size3 mtight"
-                          >
-                            <span
-                              class="mord mtight"
-                            >
-                              ∞
-                            </span>
-                          </span>
-                        </span>
-                      </span>
-                      <span
-                        class="vlist-s"
-                      >
-                        ​
-                      </span>
-                    </span>
-                    <span
-                      class="vlist-r"
-                    >
-                      <span
-                        class="vlist"
-                        style="height:0.29971000000000003em;"
-                      >
-                        <span />
-                      </span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-  </body>,
-  "container": <div>
-    <span>
+<div>
+  <span>
+    <span
+      class="katex"
+    >
       <span
-        class="katex"
+        class="katex-mathml"
+      >
+        <math>
+          <semantics>
+            <mrow>
+              <msubsup>
+                <mo>
+                  ∑
+                </mo>
+                <mn>
+                  0
+                </mn>
+                <mi
+                  mathvariant="normal"
+                >
+                  ∞
+                </mi>
+              </msubsup>
+            </mrow>
+            <annotation
+              encoding="application/x-tex"
+            >
+              \\sum_0^\\infty
+            </annotation>
+          </semantics>
+        </math>
+      </span>
+      <span
+        aria-hidden="true"
+        class="katex-html"
       >
         <span
-          class="katex-mathml"
-        >
-          <math>
-            <semantics>
-              <mrow>
-                <msubsup>
-                  <mo>
-                    ∑
-                  </mo>
-                  <mn>
-                    0
-                  </mn>
-                  <mi
-                    mathvariant="normal"
-                  >
-                    ∞
-                  </mi>
-                </msubsup>
-              </mrow>
-              <annotation
-                encoding="application/x-tex"
-              >
-                \\sum_0^\\infty
-              </annotation>
-            </semantics>
-          </math>
-        </span>
-        <span
-          aria-hidden="true"
-          class="katex-html"
+          class="base"
         >
           <span
-            class="base"
+            class="strut"
+            style="height:1.104002em;vertical-align:-0.29971000000000003em;"
+          />
+          <span
+            class="mop"
           >
             <span
-              class="strut"
-              style="height:1.104002em;vertical-align:-0.29971000000000003em;"
-            />
+              class="mop op-symbol small-op"
+              style="position:relative;top:-0.0000050000000000050004em;"
+            >
+              ∑
+            </span>
             <span
-              class="mop"
+              class="msupsub"
             >
               <span
-                class="mop op-symbol small-op"
-                style="position:relative;top:-0.0000050000000000050004em;"
-              >
-                ∑
-              </span>
-              <span
-                class="msupsub"
+                class="vlist-t vlist-t2"
               >
                 <span
-                  class="vlist-t vlist-t2"
+                  class="vlist-r"
                 >
                   <span
-                    class="vlist-r"
+                    class="vlist"
+                    style="height:0.804292em;"
                   >
                     <span
-                      class="vlist"
-                      style="height:0.804292em;"
+                      style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"
                     >
                       <span
-                        style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"
-                      >
-                        <span
-                          class="pstrut"
-                          style="height:2.7em;"
-                        />
-                        <span
-                          class="sizing reset-size6 size3 mtight"
-                        >
-                          <span
-                            class="mord mtight"
-                          >
-                            0
-                          </span>
-                        </span>
-                      </span>
+                        class="pstrut"
+                        style="height:2.7em;"
+                      />
                       <span
-                        style="top:-3.2029em;margin-right:0.05em;"
+                        class="sizing reset-size6 size3 mtight"
                       >
                         <span
-                          class="pstrut"
-                          style="height:2.7em;"
-                        />
-                        <span
-                          class="sizing reset-size6 size3 mtight"
+                          class="mord mtight"
                         >
-                          <span
-                            class="mord mtight"
-                          >
-                            ∞
-                          </span>
+                          0
                         </span>
                       </span>
                     </span>
                     <span
-                      class="vlist-s"
+                      style="top:-3.2029em;margin-right:0.05em;"
                     >
-                      ​
+                      <span
+                        class="pstrut"
+                        style="height:2.7em;"
+                      />
+                      <span
+                        class="sizing reset-size6 size3 mtight"
+                      >
+                        <span
+                          class="mord mtight"
+                        >
+                          ∞
+                        </span>
+                      </span>
                     </span>
                   </span>
                   <span
-                    class="vlist-r"
+                    class="vlist-s"
                   >
-                    <span
-                      class="vlist"
-                      style="height:0.29971000000000003em;"
-                    >
-                      <span />
-                    </span>
+                    ​
+                  </span>
+                </span>
+                <span
+                  class="vlist-r"
+                >
+                  <span
+                    class="vlist"
+                    style="height:0.29971000000000003em;"
+                  >
+                    <span />
                   </span>
                 </span>
               </span>
@@ -681,47 +551,8 @@ Object {
         </span>
       </span>
     </span>
-  </div>,
-  "debug": [Function],
-  "getAllByAltText": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllBySelectText": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getAllByValue": [Function],
-  "getByAltText": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getBySelectText": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "getByValue": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllBySelectText": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryAllByValue": [Function],
-  "queryByAltText": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryBySelectText": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "queryByValue": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+  </span>
+</div>
 `;
 
 exports[`TeX passing through other props className 1`] = `

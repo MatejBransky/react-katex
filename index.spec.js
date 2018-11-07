@@ -13,7 +13,7 @@ describe('TeX', () => {
   });
 
   test('expression via props.math', () => {
-    expect(render(<TeX math={_`\sum_0^\infty`} />)).toMatchSnapshot();
+    expect(render(<TeX math={_`\sum_0^\infty`} />).container).toMatchSnapshot();
   });
 
   test('inline math by default', () => {
