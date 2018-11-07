@@ -76,7 +76,7 @@ class App extends React.Component {
           0 & 1 & 0 \\
           0 & 0 & 1 \\
         \end{pmatrix}
-      `}</TeX>
+        `}</TeX>
 
         <span>
           via <code>props.math</code>:
