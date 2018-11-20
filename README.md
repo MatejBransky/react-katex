@@ -15,6 +15,9 @@
 </div>
 <hr />
 
+Comparison with `react-katex`: https://github.com/talyssonoc/react-katex/issues/49.
+
+
 ## Installation
 
 ```sh
