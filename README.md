@@ -7,7 +7,7 @@
   Display math expressions with <a href="https://khan.github.io/KaTeX" target="_blank">KaTeX</a> and <a href="https://reactjs.org" target="_blank">React</a>.
 </p>
 <p>
-  <img src="https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/dynamic-formula.gif" />
+  <img src="https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/example.gif" />
 </p>
 <p>
   <a href="https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo" target="_blank">Examples</a>
