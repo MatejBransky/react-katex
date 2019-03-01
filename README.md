@@ -13,7 +13,10 @@
   <a href="https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo" target="_blank">Examples</a>
 </p>
 <p>
-  <i><small>(based on the <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)</small></i>
+  <i><small>(based on the <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)</small></i><br />
+  <i><small>
+    (the readme is "forked" from <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)
+  </small></i>
 </p>
 </div>
 <hr />
