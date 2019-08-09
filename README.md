@@ -15,7 +15,7 @@
 <p>
   <i><small>(based on the <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)</small></i><br />
   <i><small>
-    (the readme is "forked" from <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)
+    (the readme and the demo are "forked" from <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)
   </small></i>
 </p>
 </div>
