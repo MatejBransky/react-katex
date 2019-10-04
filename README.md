@@ -23,6 +23,7 @@
 
 Comparison with `react-katex`: https://github.com/talyssonoc/react-katex/issues/49.
 
+![npm type definitions](https://img.shields.io/npm/types/typescript)
 
 ## Installation
 
