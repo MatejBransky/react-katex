@@ -28,6 +28,26 @@ describe('TeX', () => {
     expect($.getByTestId('wrapper').tagName).toBe('DIV');
   });
 
+  test('customizing element type via props.as', () => {
+    const $ = render(
+      <TeX data-testid="wrapper" as="var">
+        \sum_0^\infty
+      </TeX>
+    );
+    expect($.getByTestId('wrapper').tagName).toBe('VAR');
+    expect($.container).toMatchSnapshot();
+  });
+
+  test('customizing block element type via props.as & props.block', () => {
+    const $ = render(
+      <TeX data-testid="wrapper" as="figcaption" block>
+        \sum_0^\infty
+      </TeX>
+    );
+    expect($.getByTestId('wrapper').tagName).toBe('FIGCAPTION');
+    expect($.container).toMatchSnapshot();
+  });
+
   test('configuring KaTeX via props.settings', () => {
     const $ = render(
       <TeX settings={{ macros: { '*': 'cdot' } }}>y = k * x + c</TeX>
@@ -113,6 +133,15 @@ describe('TeX', () => {
   describe('passing through other props', () => {
     test('style', () => {
       const $ = render(<TeX style={{ background: 'blue' }}>1 + 2 = 3</TeX>);
+      expect($.container).toMatchSnapshot();
+    });
+
+    test('user style overwriting display style added by props.as', () => {
+      const $ = render(
+        <TeX style={{ display: 'inline' }} as="figcaption" block>
+          1 + 2 = 3
+        </TeX>
+      );
       expect($.container).toMatchSnapshot();
     });
 
