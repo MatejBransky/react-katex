@@ -1,5 +1,5 @@
 import { KatexOptions, ParseError } from 'katex';
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode, ElementType, CSSProperties } from 'react';
 
 declare module '@matejmazur/react-katex' {
   export interface TeXProps {
@@ -9,6 +9,8 @@ declare module '@matejmazur/react-katex' {
     errorColor: string;
     renderError: (error: ParseError | TypeError) => ReactNode;
     settings: KatexOptions;
+    as: ElementType;
+    style: CSSProperties;
   }
 
   const TeX: FC<TeXProps>;

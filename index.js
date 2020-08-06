@@ -4,10 +4,23 @@ import KaTeX from 'katex';
 
 function TeX(props) {
   const otherProps = omit(
-    ['children', 'math', 'block', 'errorColor', 'renderError', 'settings'],
+    [
+      'children',
+      'math',
+      'block',
+      'errorColor',
+      'renderError',
+      'settings',
+      'as',
+      'style'
+    ],
     props
   );
-  const Component = props.block ? 'div' : 'span';
+  const Component = props.as || (props.block ? 'div' : 'span');
+  const displayStyle = props.as
+    ? { display: props.block ? 'block' : 'inline' }
+    : null;
+  const style = Object.assign({}, displayStyle, props.style);
   const content = props.children || props.math;
 
   try {
@@ -26,7 +39,11 @@ function TeX(props) {
     );
 
     return (
-      <Component {...otherProps} dangerouslySetInnerHTML={{ __html: html }} />
+      <Component
+        {...otherProps}
+        style={style}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     );
   } catch (error) {
     if (error instanceof KaTeX.ParseError || error instanceof TypeError) {
@@ -35,6 +52,7 @@ function TeX(props) {
       ) : (
         <Component
           {...otherProps}
+          style={style}
           dangerouslySetInnerHTML={{ __html: error.message }}
         />
       );
@@ -50,7 +68,9 @@ TeX.propTypes = {
   block: PropTypes.bool,
   errorColor: PropTypes.string,
   renderError: PropTypes.func,
-  settings: PropTypes.object
+  settings: PropTypes.object,
+  as: PropTypes.elementType,
+  style: PropTypes.object
 };
 
 export default memo(TeX);
