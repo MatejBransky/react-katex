@@ -31,7 +31,7 @@
     "build": "microbundle --jsx React.createElement --name TeX",
     "dev": "microbundle watch",
     "test": "jest",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "husky": {
     "hooks": {
