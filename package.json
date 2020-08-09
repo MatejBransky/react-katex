@@ -1,6 +1,6 @@
 {
   "name": "@matejmazur/react-katex",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Display math in TeX with KaTeX and ReactJS",
   "keywords": [
     "react",
@@ -11,8 +11,9 @@
   ],
   "homepage": "https://github.com/MatejMazur/react-katex",
   "main": "dist/react-katex.js",
-  "types": "index.d.ts",
   "umd:main": "dist/react-katex.umd.js",
+  "module": "dist/react-katex.esm.js",
+  "types": "index.d.ts",
   "source": "index.js",
   "author": {
     "name": "Matej Mazur",
@@ -61,7 +62,7 @@
     "jest": "^23.6.0",
     "katex": "^0.10.0",
     "lint-staged": "^8.0.4",
-    "microbundle": "^0.7.0",
+    "microbundle": "^0.12.3",
     "prettier-eslint-cli": "^4.7.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
