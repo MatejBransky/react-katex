@@ -10,7 +10,7 @@
   <img src="https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/example.gif" />
 </p>
 <p>
-  <a href="https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo" target="_blank">Examples</a>
+  <a href="https://codesandbox.io/s/github/MatejMazur/react-katex/tree/master/demo?fontsize=14&hidenavigation=1&module=%2Fsrc%2FExample.tsx" target="_blank">Examples</a>
 </p>
 <p>
   <i><small>(based on the <a href="https://github.com/talyssonoc/react-katex" target="_blank">https://github.com/talyssonoc/react-katex</a>)</small></i><br />
