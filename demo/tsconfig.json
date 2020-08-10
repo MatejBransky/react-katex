@@ -1,0 +1,7 @@
+{
+  "extends": "@matejbransky/typescript-config",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react"
+  }
+}

@@ -1,9 +1,10 @@
 import React, { useState, useCallback } from 'react';
 import { render } from 'react-dom';
 
-import TeX from '../src';
+import TeX from '@matejmazur/react-katex';
 
 import './style.css';
+import { ParseError } from 'katex';
 
 const _ = String.raw;
 
@@ -89,7 +90,7 @@ const Example = () => {
   );
 };
 
-function renderError(error) {
+function renderError(error: ParseError | TypeError) {
   return (
     <p>
       <b>Custom</b> error message: {error.name}
