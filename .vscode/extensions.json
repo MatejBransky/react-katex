@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "mikestead.dotenv",
+    "dangmai.workspace-default-settings"
+  ]
+}

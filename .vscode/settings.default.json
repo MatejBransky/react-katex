@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "files.eol": "\n",
+  "prettier.useTabs": false
+}

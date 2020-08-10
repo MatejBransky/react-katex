@@ -30,3 +30,18 @@ code {
   text-align: center;
   margin: 1rem 0;
 }
+
+img {
+  width: 100%;
+}
+
+figure {
+  width: 200px;
+  border: 1px solid black;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  background: rgba(216, 216, 216, 0.356);
+  padding: 0.2rem;
+}

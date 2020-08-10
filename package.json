@@ -10,11 +10,11 @@
     "katex"
   ],
   "homepage": "https://github.com/MatejBransky/react-katex",
+  "source": "src/index.tsx",
   "main": "dist/react-katex.js",
-  "umd:main": "dist/react-katex.umd.js",
-  "module": "dist/react-katex.esm.js",
-  "types": "index.d.ts",
-  "source": "index.js",
+  "module": "dist/react-katex.modern.js",
+  "unpkg": "dist/react-katex.umd.js",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Matej Bransky",
     "email": "matej.bransky@gmail.com"
@@ -28,11 +28,18 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "cd demo && npm start",
-    "build": "microbundle --jsx React.createElement --name TeX",
+    "start": "cd demo && yarn start",
+    "build": "rimraf dist && microbundle --jsx React.createElement --name TeX -f modern,cjs,umd",
     "dev": "microbundle watch",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "types": "tsc -p tsconfig.json --noEmit",
     "test": "jest",
     "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=12",
+    "yarn": ">=1.1"
   },
   "husky": {
     "hooks": {
@@ -41,36 +48,45 @@
   },
   "lint-staged": {
     "{index,index.spec,demo/index}.js": [
-      "prettier-eslint --write",
+      "prettier --write",
       "eslint",
       "git add"
     ]
   },
-  "dependencies": {
-    "prop-types": "^15.6.2"
-  },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-jest": "^21.27.1",
-    "eslint-plugin-react": "^7.11.1",
-    "husky": "^1.1.3",
-    "jest": "^23.6.0",
-    "katex": "^0.10.0",
-    "lint-staged": "^8.0.4",
+    "@matejbransky/eslint-config": "1.0.0-alpha.2",
+    "@matejbransky/jest-preset": "1.0.0-alpha.2",
+    "@matejbransky/prettier-config": "1.0.0-alpha.2",
+    "@matejbransky/typescript-config": "1.0.0-alpha.1",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
+    "@types/katex": "^0.11.0",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "eslint": "6.x",
+    "husky": "^4.2.5",
+    "jest": "^26.2.2",
+    "katex": "^0.12.0",
+    "lint-staged": "^10.2.11",
     "microbundle": "^0.12.3",
-    "prettier-eslint-cli": "^4.7.1",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-testing-library": "^5.2.3",
-    "snapshot-diff": "^0.4.0"
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-error-boundary": "^2.3.1",
+    "rimraf": "^3.0.2",
+    "snapshot-diff": "^0.4.0",
+    "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "katex": ">=0.9.0",
-    "react": ">=16.6.0"
-  }
+    "katex": ">=0.9",
+    "react": ">=16"
+  },
+  "jest": {
+    "preset": "@matejbransky/jest-preset",
+    "testEnvironment": "jsdom"
+  },
+  "eslintConfig": {
+    "extends": "@matejbransky/eslint-config"
+  },
+  "prettier": "@matejbransky/prettier-config"
 }
