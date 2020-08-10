@@ -63,7 +63,7 @@
     "katex": "^0.10.0",
     "lint-staged": "^8.0.4",
     "microbundle": "^0.12.3",
-    "prettier-eslint-cli": "^4.7.1",
+    "prettier-eslint-cli": "^5.0.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-testing-library": "^5.2.3",
