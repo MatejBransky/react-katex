@@ -3,7 +3,7 @@ demo
 docs
 .github
 .vscode
-tests/__snapshots__
+tests
 *.log
 
 # don't ignore .npmignore files

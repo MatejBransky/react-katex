@@ -17,6 +17,7 @@ const Example = () => {
     [setValue]
   );
 
+  /* prettier-ignore */
   return (
     <div className="app">
       <h1>Demo of react-katex</h1>
@@ -86,6 +87,14 @@ const Example = () => {
 
       <span>simple expression:</span>
       <TeX block>123 + 5 = 128</TeX>
+
+      <h2>Custom wrapper component</h2>
+
+      <span><code>props.as = "figcaption"</code></span>:
+      <figure>
+        <img src="https://www.intmath.com/blog/wp-content/images/2007/09/parabola-1.gif" alt="Elephant at sunset" />
+        <TeX as="figcaption" block>y = x^2</TeX>
+      </figure>
     </div>
   );
 };

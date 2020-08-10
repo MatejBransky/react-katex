@@ -1,5 +1,11 @@
-import React, { ComponentPropsWithoutRef, useState, useEffect } from 'react';
-import KaTeX, { ParseError } from 'katex';
+import React, {
+  ComponentPropsWithoutRef,
+  useState,
+  useEffect,
+  ReactElement,
+  ElementType,
+} from 'react';
+import KaTeX, { ParseError, KatexOptions } from 'katex';
 
 const TeX: React.FC<TeXProps> = ({
   children,
@@ -8,9 +14,10 @@ const TeX: React.FC<TeXProps> = ({
   errorColor,
   renderError,
   settings,
+  as: asComponent,
   ...props
 }) => {
-  const Component = block ? 'div' : 'span';
+  const Component = asComponent || (block ? 'div' : 'span');
   const content = (children ?? math) as string;
   const [state, setState] = useState<
     { innerHtml: string } | { errorElement: React.ReactElement }
@@ -55,9 +62,10 @@ export default TeX;
 
 type TeXProps = ComponentPropsWithoutRef<'div'> &
   Partial<{
+    as: ElementType;
     math: string | number;
     block: boolean;
     errorColor: string;
-    renderError: (error: ParseError | TypeError) => React.ReactElement;
-    settings: KaTeX.KatexOptions;
+    renderError: (error: ParseError | TypeError) => ReactElement;
+    settings: KatexOptions;
   }>;

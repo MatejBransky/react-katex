@@ -130,6 +130,20 @@ This will render `<b>Fail: ParseError</b>`:
 
 ![renderError](https://raw.githubusercontent.com/MatejMazur/react-katex/master/docs/rendererror.png)
 
+#### Custom wrapper component
+
+You can change the wrapper component (block math uses `div` and inline uses `span`) by whatever you want via `props.as` attribute.
+
+```jsx
+ReactDOM.render(
+  <TeX
+    math="y = x^2"
+    as="figcaption"
+  />,
+  document.getElementById('math')
+);
+```
+
 ### Escaping expressions
 
 In addition to using the `math` property, you can also quote as a child allowing the use of `{ }` in your expression.
