@@ -159,7 +159,6 @@ exports[`TeX customizing block element type via props.as & props.block 1`] = `
 <div>
   <figcaption
     data-testid="wrapper"
-    style="display: block;"
   >
     <span
       class="katex-display"
@@ -170,7 +169,10 @@ exports[`TeX customizing block element type via props.as & props.block 1`] = `
         <span
           class="katex-mathml"
         >
-          <math>
+          <math
+            display="block"
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
             <semantics>
               <mrow>
                 <munderover>
@@ -299,7 +301,6 @@ exports[`TeX customizing element type via props.as 1`] = `
 <div>
   <var
     data-testid="wrapper"
-    style="display: inline;"
   >
     <span
       class="katex"
@@ -307,7 +308,9 @@ exports[`TeX customizing element type via props.as 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <msubsup>
@@ -1080,7 +1083,10 @@ exports[`TeX passing through other props user style overwriting display style ad
         <span
           class="katex-mathml"
         >
-          <math>
+          <math
+            display="block"
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          >
             <semantics>
               <mrow>
                 <mn>
