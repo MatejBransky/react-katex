@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { render } from 'react-dom';
 
 import TeX from '@matejmazur/react-katex';
 
@@ -99,6 +98,8 @@ const Example = () => {
   );
 };
 
+export { Example };
+
 function renderError(error: ParseError | TypeError) {
   return (
     <p>
@@ -106,5 +107,3 @@ function renderError(error: ParseError | TypeError) {
     </p>
   );
 }
-
-render(<Example />, document.getElementById('app'));

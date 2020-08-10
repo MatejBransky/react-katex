@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "rimraf dist && parcel index.html"
+    "start": "rimraf dist && parcel src/index.html"
   },
   "dependencies": {
     "@matejmazur/react-katex": "latest",
