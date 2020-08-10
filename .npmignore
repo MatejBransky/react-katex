@@ -1,6 +1,8 @@
 node_modules
 demo
 docs
+.github
+.vscode
 tests/__snapshots__
 *.log
 

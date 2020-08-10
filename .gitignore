@@ -4,3 +4,4 @@ yarn.lock
 .cache
 demo/dist
 .vscode/settings.json
+.npmrc
