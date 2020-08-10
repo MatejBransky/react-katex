@@ -9,22 +9,22 @@
     "math",
     "katex"
   ],
-  "homepage": "https://github.com/MatejMazur/react-katex",
+  "homepage": "https://github.com/MatejBransky/react-katex",
   "main": "dist/react-katex.js",
   "umd:main": "dist/react-katex.umd.js",
   "module": "dist/react-katex.esm.js",
   "types": "index.d.ts",
   "source": "index.js",
   "author": {
-    "name": "Matej Mazur",
-    "email": "matej.mazur@mail.com"
+    "name": "Matej Bransky",
+    "email": "matej.bransky@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:MatejMazur/react-katex.git"
+    "url": "git@github.com:MatejBransky/react-katex.git"
   },
   "bugs": {
-    "url": "https://github.com/MatejMazur/react-katex/issues"
+    "url": "https://github.com/MatejBransky/react-katex/issues"
   },
   "license": "MIT",
   "scripts": {
