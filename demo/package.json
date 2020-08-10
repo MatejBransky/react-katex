@@ -8,14 +8,13 @@
     "start": "rimraf dist && parcel index.html"
   },
   "dependencies": {
-    "@matejmazur/react-katex": "^3.0.1",
-    "katex": "^0.10.0",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "@matejmazur/react-katex": "latest",
+    "katex": "^0.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "parcel-bundler": "^1.10.3",
-    "rimraf": "^2.6.2"
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
   }
 }

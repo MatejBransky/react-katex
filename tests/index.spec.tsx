@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from 'react-testing-library';
-import 'react-testing-library/cleanup-after-each';
+import '@testing-library/jest-dom';
+import { render } from '@testing-library/react';
 import snapshotDiff from 'snapshot-diff';
 
-import TeX from './index';
+import TeX from '../src';
+import { ParseError } from 'katex';
 
 const _ = String.raw;
 
@@ -48,7 +49,7 @@ describe('TeX', () => {
 
   describe('error handling', () => {
     test('show error when it updates from invalid to valid formula', () => {
-      const renderError = error => (
+      const renderError = (error: ParseError | TypeError) => (
         <p>{error.message} Cannot render this formula.</p>
       );
       const $ = render(<TeX renderError={renderError}>\inta</TeX>);
@@ -59,7 +60,7 @@ describe('TeX', () => {
     });
 
     test('show error when it updates from invalid to valid formula', () => {
-      const renderError = error => (
+      const renderError = (error: ParseError | TypeError) => (
         <p>{error.message} Cannot render this formula.</p>
       );
       const $ = render(<TeX renderError={renderError}>\sum_1^\infty</TeX>);
@@ -96,14 +97,18 @@ describe('TeX', () => {
     });
 
     test('props.renderError: invalid type of expression in props.math', () => {
-      const renderError = error => <div>Message of error: {error.message}</div>;
+      const renderError = (error: ParseError | TypeError) => (
+        <div>Message of error: {error.message}</div>
+      );
       let $;
       $ = render(<TeX math={123} renderError={renderError} />);
       expect($.container).toMatchSnapshot();
     });
 
     test('props.renderError: error is caused while parsing math expression', () => {
-      const renderError = error => <div>Message of error: {error.message}</div>;
+      const renderError = (error: ParseError | TypeError) => (
+        <div>Message of error: {error.message}</div>
+      );
       let $;
       $ = render(<TeX math={_`\sum_{`} renderError={renderError} />);
       expect($.container).toMatchSnapshot();

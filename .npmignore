@@ -1,11 +1,8 @@
 node_modules
 demo
 docs
-__snapshots__
+tests/__snapshots__
 *.log
-.editorconfig
-.travis.yml
-.eslintrc.js
 
 # don't ignore .npmignore files
 !.npmignore

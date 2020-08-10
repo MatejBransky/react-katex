@@ -1,101 +1,93 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import TeX from '@matejmazur/react-katex';
+import React, { useState, useCallback } from 'react';
+import { render } from 'react-dom';
+
+import TeX from '../src';
+
 import './style.css';
 
 const _ = String.raw;
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: _`y = k * x + c`
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
+const Example = () => {
+  const [value, setValue] = useState('y = k * x + c');
+  const handleChange = useCallback(
+    (event) => {
+      setValue(event.target.value);
+    },
+    [setValue]
+  );
 
-  handleChange({ target: { value } }) {
-    this.setState({ value });
-  }
+  return (
+    <div className="app">
+      <h1>Demo of react-katex</h1>
 
-  render() {
-    return (
-      <div className="app">
-        <h1>Demo of react-katex</h1>
+      <h2>Dynamic formula</h2>
+      <textarea value={value} onChange={handleChange} spellCheck={false} />
+      {/* You can pass styles or classNames */}
+      <TeX
+        block
+        className="output"
+        // you can change directly KaTeX options!
+        settings={{ macros: { '*': _`\cdot` } }}
+      >
+        {value}
+      </TeX>
 
-        <h2>Dynamic formula</h2>
-        <textarea
-          value={this.state.value}
-          onChange={this.handleChange}
-          spellCheck={false}
-        />
-        {/* You can pass styles or classNames */}
-        <TeX
-          block
-          className="output"
-          // you can change directly KaTeX options!
-          settings={{ macros: { '*': _`\cdot` } }}
-        >
-          {this.state.value}
-        </TeX>
+      <small>
+        You can notice that in the code is written the custom macro (via{' '}
+        <code>props.settings</code>) for interpunct so you can use &quot;
+        <code>*</code>
+        &quot; instead of &quot;
+        <code>\cdot</code>
+        &quot;.
+      </small>
 
-        <small>
-          You can notice that in the code is written the custom macro (via{' '}
-          <code>props.settings</code>) for interpunct so you can use &quot;
-          <code>*</code>
-          &quot; instead of &quot;
-          <code>\cdot</code>
-          &quot;.
-        </small>
+      <h2>Inline math</h2>
+      <p>
+        This is an example of inline math (via <code>props.children</code>
+        ): <TeX>\int_0^\infty x^2 dx</TeX>.<br />
+      </p>
+      <p>
+        And the next one is written via <code>props.math</code>:{' '}
+        <TeX math={_`\int_0^\infty x^2 dx`} />.
+      </p>
 
-        <h2>Inline math</h2>
-        <p>
-          This is an example of inline math (via <code>props.children</code>
-          ): <TeX>\int_0^\infty x^2 dx</TeX>.<br />
-        </p>
-        <p>
-          And the next one is written via <code>props.math</code>:{' '}
-          <TeX math={_`\int_0^\infty x^2 dx`} />.
-        </p>
+      <h2>Block math</h2>
 
-        <h2>Block math</h2>
+      <span>
+        via <code>props.children</code>:
+      </span>
+      <TeX block>{_`
+      \begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+      \end{pmatrix}
+      `}</TeX>
 
-        <span>
-          via <code>props.children</code>:
-        </span>
-        <TeX block>{_`
-        \begin{pmatrix}
-          1 & 0 & 0 \\
-          0 & 1 & 0 \\
-          0 & 0 & 1 \\
-        \end{pmatrix}
-        `}</TeX>
+      <span>
+        via <code>props.math</code>:
+      </span>
+      <TeX math={_`\int_0^\infty x^2 dx`} block />
 
-        <span>
-          via <code>props.math</code>:
-        </span>
-        <TeX math={_`\int_0^\infty x^2 dx`} block />
+      <h2>Error handling</h2>
 
-        <h2>Error handling</h2>
+      <span>
+        <code>props.errorColor</code>:
+      </span>
+      <TeX errorColor="#cc0000" block>
+        \int_0^\infty x^2 dx \inta
+      </TeX>
 
-        <span>
-          <code>props.errorColor</code>:
-        </span>
-        <TeX errorColor="#cc0000" block>
-          \int_0^\infty x^2 dx \inta
-        </TeX>
+      <span>
+        <code>props.renderError</code>:
+      </span>
+      <TeX renderError={renderError} block>{_`\sum_{`}</TeX>
 
-        <span>
-          <code>props.renderError</code>:
-        </span>
-        <TeX renderError={renderError} block>{_`\sum_{`}</TeX>
-
-        <span>simple expression:</span>
-        <TeX block>123 + 5 = 128</TeX>
-      </div>
-    );
-  }
-}
+      <span>simple expression:</span>
+      <TeX block>123 + 5 = 128</TeX>
+    </div>
+  );
+};
 
 function renderError(error) {
   return (
@@ -105,4 +97,4 @@ function renderError(error) {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+render(<Example />, document.getElementById('app'));

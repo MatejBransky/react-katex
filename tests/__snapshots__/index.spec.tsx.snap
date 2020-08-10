@@ -9,7 +9,9 @@ exports[`TeX configuring KaTeX via props.settings 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <mi>
@@ -63,7 +65,7 @@ exports[`TeX configuring KaTeX via props.settings 1`] = `
             style="height:0.625em;vertical-align:-0.19444em;"
           />
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
             style="margin-right:0.03588em;"
           >
             y
@@ -90,33 +92,33 @@ exports[`TeX configuring KaTeX via props.settings 1`] = `
             style="height:0.77777em;vertical-align:-0.08333em;"
           />
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
             style="margin-right:0.03148em;"
           >
             k
           </span>
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
           >
             c
           </span>
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
           >
             d
           </span>
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
           >
             o
           </span>
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
           >
             t
           </span>
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
           >
             x
           </span>
@@ -142,7 +144,7 @@ exports[`TeX configuring KaTeX via props.settings 1`] = `
             style="height:0.43056em;vertical-align:0em;"
           />
           <span
-            class="mord mathdefault"
+            class="mord mathnormal"
           >
             c
           </span>
@@ -176,7 +178,9 @@ exports[`TeX error handling formula with the wrong part highlighted in default c
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <mstyle
@@ -233,7 +237,9 @@ exports[`TeX error handling props.errorColor 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <mstyle
@@ -308,7 +314,9 @@ exports[`TeX expression via props.children 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <msubsup>
@@ -436,7 +444,9 @@ exports[`TeX expression via props.math 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <msubsup>
@@ -566,7 +576,9 @@ exports[`TeX passing through other props className 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <mn>
@@ -679,7 +691,9 @@ exports[`TeX passing through other props style 1`] = `
       <span
         class="katex-mathml"
       >
-        <math>
+        <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        >
           <semantics>
             <mrow>
               <mn>
@@ -786,7 +800,7 @@ exports[`TeX props updated 1`] = `
 - First value
 + Second value
 
-@@ -12,11 +12,11 @@
+@@ -14,11 +14,11 @@
                 <msubsup>
                   <mo>
                     ∑
@@ -799,7 +813,7 @@ exports[`TeX props updated 1`] = `
                     mathvariant=\\"normal\\"
                   >
                     ∞
-@@ -24,11 +24,11 @@
+@@ -26,11 +26,11 @@
                 </msubsup>
               </mrow>
               <annotation
@@ -812,7 +826,7 @@ exports[`TeX props updated 1`] = `
           </math>
         </span>
         <span
-@@ -75,11 +75,11 @@
+@@ -77,11 +77,11 @@
                           class=\\"sizing reset-size6 size3 mtight\\"
                         >
                           <span

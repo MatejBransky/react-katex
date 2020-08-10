@@ -116,7 +116,7 @@ It's possible to handle parse errors using the prop `renderError`. This prop mus
 ReactDOM.render(
   <TeX
     math="\\int_{"
-    renderError={error => {
+    renderError={(error) => {
       return <b>Fail: {error.name}</b>;
     }}
   />,
