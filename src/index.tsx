@@ -4,6 +4,7 @@ import React, {
   useEffect,
   ReactElement,
   ElementType,
+  memo,
 } from 'react';
 import KaTeX, { ParseError, KatexOptions } from 'katex';
 
@@ -58,7 +59,7 @@ const TeX: React.FC<TeXProps> = ({
   );
 };
 
-export default TeX;
+export default memo(TeX);
 
 type TeXProps = ComponentPropsWithoutRef<'div'> &
   Partial<{
