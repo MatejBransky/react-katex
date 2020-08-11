@@ -74,7 +74,7 @@
     "react-dom": "^16.13.1",
     "react-error-boundary": "^2.3.1",
     "rimraf": "^3.0.2",
-    "snapshot-diff": "^0.4.0",
+    "snapshot-diff": "^0.8.1",
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
