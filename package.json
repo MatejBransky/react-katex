@@ -12,7 +12,7 @@
   "homepage": "https://github.com/MatejBransky/react-katex",
   "source": "src/index.tsx",
   "main": "dist/react-katex.js",
-  "module": "dist/react-katex.esm.js",
+  "module": "dist/react-katex.m.js",
   "esmodule": "dist/react-katex.modern.js",
   "unpkg": "dist/react-katex.umd.js",
   "types": "dist/index.d.ts",
