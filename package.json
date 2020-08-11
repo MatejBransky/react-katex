@@ -12,7 +12,8 @@
   "homepage": "https://github.com/MatejBransky/react-katex",
   "source": "src/index.tsx",
   "main": "dist/react-katex.js",
-  "module": "dist/react-katex.modern.js",
+  "module": "dist/react-katex.esm.js",
+  "esmodule": "dist/react-katex.modern.js",
   "unpkg": "dist/react-katex.umd.js",
   "types": "dist/index.d.ts",
   "author": {
@@ -29,7 +30,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cd demo && yarn start",
-    "build": "rimraf dist && microbundle --jsx React.createElement --name TeX -f modern,cjs,umd",
+    "build": "rimraf dist && microbundle --jsx React.createElement --name TeX",
     "dev": "microbundle watch",
     "format": "prettier --write .",
     "lint": "eslint .",
