@@ -46,7 +46,7 @@ Display math in the middle of the text.
 
 ```jsx
 ReactDOM.render(
-  <TeX math="\\int_0^\\infty x^2 dx" />,
+  <TeX math="\int_0^\infty x^2 dx" />,
   document.getElementById('math')
 );
 
@@ -68,7 +68,7 @@ Display math in a separated block, with larger font and symbols.
 
 ```jsx
 ReactDOM.render(
-  <TeX math="\\int_0^\\infty x^2 dx" block />,
+  <TeX math="\int_0^\infty x^2 dx" block />,
   document.getElementById('math')
 );
 
