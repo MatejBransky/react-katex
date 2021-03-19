@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "@matejbransky/eslint-config": "1.0.0-alpha.2",
-    "@matejbransky/jest-preset": "1.0.0-alpha.2",
+    "@matejbransky/jest-preset": "1.0.0-alpha.3",
     "@matejbransky/prettier-config": "1.0.0-alpha.2",
     "@matejbransky/typescript-config": "1.0.0-alpha.1",
     "@testing-library/jest-dom": "^5.11.2",
