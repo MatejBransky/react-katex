@@ -8,22 +8,22 @@
   },
   "dependencies": {
     "@matejmazur/react-katex": "latest",
-    "katex": "^0.12.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "katex": "0.12.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
   },
   "devDependencies": {
     "@matejbransky/eslint-config": "1.0.0-alpha.2",
     "@matejbransky/prettier-config": "1.0.0-alpha.2",
     "@matejbransky/typescript-config": "1.0.0-alpha.1",
-    "@types/katex": "^0.11.0",
-    "@types/react": "^16.9.45",
-    "@types/react-dom": "^16.9.8",
-    "eslint": "6.x",
-    "parcel": "^1.12.4",
-    "prettier": "^2.0.5",
-    "rimraf": "^3.0.2",
-    "typescript": "^3.9.7"
+    "@types/katex": "0.11.0",
+    "@types/react": "16.14.5",
+    "@types/react-dom": "16.9.11",
+    "eslint": "6.8.0",
+    "parcel": "1.12.4",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "typescript": "3.9.9"
   },
   "prettier": "@matejbransky/prettier-config",
   "eslintConfig": {
