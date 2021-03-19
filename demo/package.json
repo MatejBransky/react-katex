@@ -15,7 +15,7 @@
   "devDependencies": {
     "@matejbransky/eslint-config": "1.0.0-alpha.2",
     "@matejbransky/prettier-config": "1.0.0-alpha.2",
-    "@matejbransky/typescript-config": "1.0.0-alpha.1",
+    "@matejbransky/typescript-config": "1.0.0-alpha.3",
     "@types/katex": "0.11.0",
     "@types/react": "16.14.5",
     "@types/react-dom": "16.9.11",
